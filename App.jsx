@@ -1,6 +1,6 @@
 import './App.css'
-import Nav from '/src/navbar.jsx'
-import Body from '/src/bodyitems.jsx'
+import Nav from '/src/nav.jsx'
+import Body from '/src/body.jsx'
 export default function App() {
   return (
     <main>
