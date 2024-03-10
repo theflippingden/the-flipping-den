@@ -1,11 +1,11 @@
-import './App.css'
-import Nav from '/src/nav.jsx'
-import Body from '/src/body.jsx'
+import '/public/style.css'
+import Nav from './components/nav.jsx'
+import Body from './components/body.jsx'
 export default function App() {
   return (
     <main>
       <Nav/>
-      <Body />
+      <Body/>
     </main>
   )
 }
