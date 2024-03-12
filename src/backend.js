@@ -1,4 +1,4 @@
-// this is just the backend for this website, just basically a simple page switcher that draws from it.
+// this is just the backend for this website, just basically a simple page switcher that draws from it. ported to 3000 cuz why not
 http.createServer(function (req, res) {
     var q = url.parse(req.url, true);
     var filename = "." + q.pathname + ".html";
