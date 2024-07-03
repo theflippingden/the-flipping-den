@@ -1,0 +1,7 @@
+.headbutt {
+  width: 25vw;
+  height: 10vh;
+  background-color: rgba(0, 0, 0, 0);
+  font-family: sans-serif; /*placeholder*/
+  /*the color will be id-specific*/
+}
