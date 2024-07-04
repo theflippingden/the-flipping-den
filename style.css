@@ -5,11 +5,16 @@
   -webkit-transition-duration: 0.5s;
   font-family: 'Montserrat', sans-serif;
 }
+html {
+  margin: none;
+  padding: none;
+  overflow-x: hidden;
+}
 #title {
   width: 25vw;
   height: 10vh;
-  padding: 0;
-  margin: 0;
+  padding: none;
+  margin: none;
   background-image: url("https://img.freepik.com/free-vector/illustration-usa-flag_53876-18165.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -21,8 +26,8 @@
   height: 10vh;
   background-color: rgba(0, 0, 0, 0);
   font-family: sans-serif;
-  padding: 0;
-  margin: 0;
+  padding: none;
+  margin: none;
   border: none;
   background: none;
 }
