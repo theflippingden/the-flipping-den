@@ -1,20 +1,20 @@
 * {
   transition-duration: 0.5s;
   -o-transition-duration: 0.5s;
-  -moz-transition-duration: ;
+  -moz-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
 }
 .headbutt {
   width: 25vw;
   height: 10vh;
   background-color: rgba(0, 0, 0);
-  opacity: 0;
   font-family: sans-serif;
   padding: 0;
   border: none;
   background: none;
 }
 .headbutt:hover {
-  opacity: 0.1;
+  background-color: rgba(0,0,0,0.1);
 }
 .red {color: rgb(245, 78, 66)}
 .orange {color: rgb(245, 122.5, 78)}
