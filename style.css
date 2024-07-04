@@ -26,10 +26,23 @@ html {
   height: 10vh;
   background-color: rgba(0, 0, 0, 0);
   font-family: sans-serif;
+  position: fixed;
   padding: 0px;
   margin: none;
   border: none;
   background: none;
+}
+#about {
+  top: 0px;
+  left: 25vw;
+}
+#conta {
+  top: 0px;
+  left: 50vw;
+}
+#price {
+  top: 0px;
+  left: 75vw; 
 }
 .headbutt:hover {
   background-color: rgba(0,0,0,0.08);
