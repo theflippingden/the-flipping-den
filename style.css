@@ -19,7 +19,7 @@ html {
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: 0px 0px;
-  background-size: auto;
+  background-size: cover;
 }
 .headbutt {
   width: 25vw;
