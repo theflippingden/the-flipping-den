@@ -15,6 +15,7 @@ html {
   height: 10vh;
   padding: 0px;
   margin: none;
+  position: fixed;
   background-image: url("usa_flag.png");
   background-repeat: no-repeat;
   background-attachment: scroll;
