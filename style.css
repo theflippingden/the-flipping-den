@@ -17,11 +17,3 @@ html {
   margin: none;
   position: fixed;
 }
-.red {color: rgb(245, 78, 66)}
-.orange {color: rgb(245, 122.5, 78)}
-.yellow {color: rgb(245, 245, 78)}
-.green {color: rgb(66, 245, 78)}
-.aqua {color: rgb(78, 245, 245);}
-.blue {color: rgb(78, 66, 245)}
-.pink {color: rgb(245, 78, 245)}
-.purple {color: rgb(122.5, 78, 245)}
