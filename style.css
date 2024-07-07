@@ -16,37 +16,6 @@ html {
   padding: 0px;
   margin: none;
   position: fixed;
-  background-image: url("usa_flag.png");
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-position: 0px 0px;
-  background-size: cover;
-}
-.headbutt {
-  width: 25vw;
-  height: 10vh;
-  background-color: rgba(0, 0, 0, 0);
-  font-family: sans-serif;
-  position: fixed;
-  padding: 0px;
-  margin: none;
-  border: none;
-  background: none;
-}
-#about {
-  top: 0px;
-  left: 25vw;
-}
-#conta {
-  top: 0px;
-  left: 50vw;
-}
-#price {
-  top: 0px;
-  left: 75vw; 
-}
-.headbutt:hover {
-  background-color: rgba(0,0,0,0.08);
 }
 .red {color: rgb(245, 78, 66)}
 .orange {color: rgb(245, 122.5, 78)}
