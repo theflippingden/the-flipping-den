@@ -17,3 +17,6 @@ html {
   margin: none;
   position: fixed;
 }
+#menu, #close {
+  color: rgb(0,0,0);
+}
