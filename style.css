@@ -24,6 +24,12 @@ html {
   'GRAD' -25,
   'opsz' 48
 }
-#menu, #close {
-  color: rgb(0,0,0);
+#menubutton {
+  background: none;
+  outline: none;
+  width: 10vw;
+  height: 10vh;
+  position: fixed;
+  top: 0px;
+  right: 10vw;
 }
