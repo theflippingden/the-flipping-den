@@ -17,6 +17,13 @@ html {
   margin: none;
   position: fixed;
 }
+.material-symbols-outlined {
+  font-variation-settings: 
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' -25,
+  'opsz' 48
+}
 #menu, #close {
   color: rgb(0,0,0);
 }
