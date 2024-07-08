@@ -27,14 +27,13 @@ html {
 #menubutton {
   background: none;
   outline: none;
-  width: 10vw;
+  width: 5vw;
   height: 10vh;
   position: fixed;
   top: 0px;
-  right: 10vw;
+  right: 0px;
 }
 #menubutton:hover {
   width: 11vw;
   height: 11vh;
-  right: 11vw;
 }
