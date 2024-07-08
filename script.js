@@ -6,4 +6,4 @@ function mtc() {
   }
 }
 
-document.getElementById("swbtn").addEventListener("click", mtc)
+document.getElementById("swbtn").addEventListener("click", function() {mtc()})
