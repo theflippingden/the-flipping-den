@@ -5,3 +5,5 @@ function mtc() {
     document.getElementById("swbtn").textContent="menu"
   }
 }
+
+document.getElementById("swbtn").addEventListener("click", mtc())
