@@ -16,7 +16,7 @@ html {
   flex-flow: row-reverse nowrap;
   justify-content: flex-end;
   align-items: center;
-  
+  background-color: rgb(255,0,0);
 }
 #home {
   padding: none;
@@ -28,5 +28,5 @@ html {
   border-radius: 2000px; /*yeahhh*/
   background: none;
   background-color: rgba(0,0,0,0);
-  box-shadow: 0 0 3px 3px rgb(160, 160, 160);
+  box-shadow: 0 0 3px 3px rgb(160, 160, 160), 0 0 3px 3px rgb(160, 160, 160) inset;
 }
