@@ -2,6 +2,7 @@
   transition-duration: 0.5s;
   -o-transition-duration: 0.5s;
   -moz-transition-duration: 0.5s;
+  -ms-transition-duration: 0.5s;
   -webkit-transition-duration: 0.5s;
   font-family: 'Montserrat', sans-serif;
 }
@@ -10,29 +11,22 @@ html {
   padding: 0px;
   overflow-x: hidden;
 }
-#title {
-  width: 25vw;
-  height: 10vh;
-  padding: 0px;
-  margin: none;
-  position: fixed;
+#navbar {
+  display: flex;
+  flex-flow: row-reverse nowrap;
+  justify-content: flex-end;
+  align-items: center;
+  
 }
-.material-symbols-outlined {
-  font-variation-settings: 
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' -25,
-  'opsz' 48
-}
-#menubutton {
+#home {
+  padding: none;
+  margin: 10px;
+  flex: 0 0 auto;
+  width: 10%;
+  height: 0;
+  padding-bottom: 10%;
+  border-radius: 2000px; /*yeahhh*/
   background: none;
-  outline: none;
-  width: 5vw;
-  height: 10vh;
-  position: fixed;
-  top: 0px;
-  right: 0px;
-}
-#menubutton:hover {
-  width: 6vw;
+  background-color: rgba(0,0,0,0);
+  box-shadow: 0 0 3px 3px rgb(160, 160, 160);
 }
