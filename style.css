@@ -10,6 +10,7 @@ html {
   margin: none;
   padding: 0px;
   overflow-y: hidden;
+  scroll-behavior: smooth;
 }
 #intro {
   width: 300vw;
