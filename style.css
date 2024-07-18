@@ -12,3 +12,22 @@ html {
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
+#navbar {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: rgb(157, 158, 161)
+}
+#outtext{
+  color: rgb(44, 50, 79, 0);
+  -webkit-text-stroke: 2px rgb(44, 50, 79);
+  font-size: 10vh;
+  position: relative;
+  padding: none;
+  margin: auto;
+
+}
+/*44, 50, 79
+157, 158, 161*/
