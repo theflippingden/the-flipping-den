@@ -34,7 +34,7 @@ body {
 #outtext{
   color: rgb(44, 50, 79, 0);
   -webkit-text-stroke: 2px rgb(44, 50, 79);
-  font-size: 10vh;
+  font-size: 8vw;
   position: relative;
   font-family: 'Concert One';
   font-weight: 100;
