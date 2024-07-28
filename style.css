@@ -1,9 +1,9 @@
 * {
-  transition-duration: 0.5s;
-  -o-transition-duration: 0.5s;
-  -moz-transition-duration: 0.5s;
-  -ms-transition-duration: 0.5s;
-  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -ms-transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
   font-family: 'Montserrat', sans-serif;
 }
 html {
@@ -12,22 +12,66 @@ html {
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
+body {
+  background-color: rgb(207, 209, 214);
+}
 #navbar {
   width: 100vw;
   height: 100vh;
   position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   top: 0px;
   left: 0px;
-  background-color: rgb(157, 158, 161)
+  background-color: rgb(157,158,161)
+}
+#scrolldown {
+  color: rgb(200,200,200);
 }
 #outtext{
   color: rgb(44, 50, 79, 0);
   -webkit-text-stroke: 2px rgb(44, 50, 79);
   font-size: 10vh;
   position: relative;
-  padding: none;
-  margin: auto;
-
+  font-family: 'Concert One';
+  font-weight: lighter;
+  text-align: center;
+}
+.filltext {
+  font-family: 'Concert One';
+  color: rgb(44,50,79);
+}
+.bodystuff {
+  position: relative;
+}
+.titles, .bodytext, .bodystuff {
+  padding: 0vh 2vw 1vh 2vw;
+  position: relative;
+  top: 100vh;
+}
+.titles {
+  font-family: 'Concert One';
+  color: rgb(44,50,79);
+  /*-webkit-text-stroke: 2px rgb(44,50,79);
+  font-weight: lighter;*/
+  font-size: 6vw;
+  text-align: center;
+}
+.bodytext {
+  color: rgb(25, 25, 25);
+  font-family: 'Ubuntu Mono'
+}
+::webkit-scrollbar {
+  width: 10px;
+}
+::webkit-scrollbar-track {
+  background: rgb(0,0,0,0.05);
+}
+::webkit-scrollbar-thumb {
+  background: rgb(44,50,79);
+  border-radius: 5px;
 }
 /*44, 50, 79
-157, 158, 161*/
+157, 158, 161
+207, 209, 214*/
