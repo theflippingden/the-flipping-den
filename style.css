@@ -23,6 +23,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  vertical-align: middle;
   top: 0px;
   left: 0px;
   background-color: rgb(157,158,161)
@@ -38,6 +39,15 @@ body {
   font-family: 'Concert One';
   font-weight: 100;
   text-align: center;
+  text-justify: middle;
+  background-color: rgb(0,0,0,0);
+  border: 2px solid black;
+  height: 40vw;
+  width: 40vw;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .filltext {
   font-family: 'Concert One';
@@ -79,6 +89,14 @@ body {
 }
 ::-webkit-scrollbar-thumb:hover {
   background: rgb(44,50,79,0.8);
+}
+::selection {
+  background: rgb(44,50,79);
+  color: rgb(255,255,255);
+}
+::-moz-selection {
+  background: rgb(44,50,79);
+  color: rgb(255,255,255);
 }
 /*44, 50, 79
 157, 158, 161
