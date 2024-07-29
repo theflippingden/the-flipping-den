@@ -52,6 +52,15 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  user-select: none;
+}
+#outtext:hover {
+  background-color: rgb(44,50,79);
+  border: 2px solid rgb(44,50,79);
+  color: rgb(255,255,255);
+}
+#outtext:hover > .filltext {
+  color: rgb(255,255,255);
 }
 .filltext {
   font-family: 'Concert One';
@@ -72,6 +81,7 @@ body {
   font-weight: lighter;*/
   font-size: 6vw;
   text-align: center;
+  user-select: none;
 }
 .bodytext {
   color: rgb(25, 25, 25);
