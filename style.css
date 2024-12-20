@@ -28,7 +28,7 @@ p,h1,h2,h3,h4,h5,h6 {
     top: 0;
     left: 0;
     width: 100%;
-    height: 10%;
+    height: 9vw;
     background-color: rgb(60,60,70);
     display: flex;
     align-items: center;
@@ -38,7 +38,7 @@ p,h1,h2,h3,h4,h5,h6 {
     margin: 15px;
 }
 #title {
-    color: rgb(100,200,100);
+    color: rgb(100,225,100);
     margin-right: 10px;
 }
 #theme {
