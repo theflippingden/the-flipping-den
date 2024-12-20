@@ -39,12 +39,10 @@ p,h1,h2,h3,h4,h5,h6 {
 }
 #title {
     color: rgb(100,200,100);
+    margin-right: 10px;
 }
 #theme {
     background-color: var(--green);
-    z-index: 1000;
-    position: absolute;
-    left: 90%;
 }
 #theme2 {
     background-color: var(--red);
@@ -63,18 +61,11 @@ p,h1,h2,h3,h4,h5,h6 {
 }
 #theme,#theme2,#theme3,#theme4,#theme5,#theme6 {
     width: 5vw;
-    max-width: 5vw;
     height: 0px;
     padding-bottom: 5vw;
     border-radius: 100%;
     border: 1px solid grey;
-    position: absolute;
-    left: 90%;
-    top: 0vh;
     transition-duration: 0.7s;
-}
-#theme2,#theme3,#theme4,#theme5,#theme6 {
-    z-index: 1;
 }
 #theme:hover, #theme2:hover, #theme3:hover, #theme4:hover, #theme5:hover, #theme6:hover {
     border: 1px solid rgb(255,255,255);
