@@ -9,3 +9,7 @@ function changeColor(clr) {
 }
 themeb.addEventListener("click", function(){changeColor("var(--red)")});
 themec.addEventListener("click", function(){changeColor("var(--blue)")})
+function Minimize () {
+    document.getElementById("navbar").style.height = "4.5vw";
+    themea.style.width = "2.5vw";
+}
