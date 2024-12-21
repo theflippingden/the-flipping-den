@@ -40,34 +40,41 @@ p,h1,h2,h3,h4,h5,h6 {
 }
 #theme {
     background-color: var(--green);
+    top: 15vh;
 }
 #theme2 {
     background-color: var(--red);
+    top: 21vh;
 }
 #theme3 {
     background-color: var(--blue);
+    top: 27vh;
 }
 #theme4 {
     background-color: var(--yellow);
+    top: 33vh;
 }
 #theme5 {
     background-color: var(--pink);
+    top: 39vh;
 }
 #theme6 {
     background-color: var(--aqua);
+    top: 45vh;
 }
 #theme,#theme2,#theme3,#theme4,#theme5,#theme6 {
     width: 0;
     height: 5vh;
     padding-right: 5vh;
     border-radius: 100%;
-    border: 0px solid grey;
+    border: none;
     transition-duration: 0.7s;
-    position: fixed;
-    left: 90vw;
+    z-index: 1;
+    margin-top: 3px;
+    margin-bottom: 3px;
 }
 #theme:hover, #theme2:hover, #theme3:hover, #theme4:hover, #theme5:hover, #theme6:hover {
-    border: 1px solid rgb(255,255,255);
+    border: none;
 }
 #themeall {
     width: 0;
@@ -78,5 +85,28 @@ p,h1,h2,h3,h4,h5,h6 {
     border: 0.5vh solid white;
     position: fixed;
     left: 90vw;
-    top: -0.5vh;
+    top: 1.75vh;
+}
+#themecell {
+    width: 6.5vh;
+    height: 37vh;
+    background-color: rgb(60,60,70);
+    position: fixed;
+    top: 14vh;
+    left: 90vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column wrap;
+    border-radius: 10px;
+}
+#themecellarrow {
+    width: 0px;
+    height: 0px;
+    border-left: 3.25vh solid transparent;
+    border-right: 3.25vh solid transparent;
+    border-bottom: 3.25vh solid rgb(60,60,70);
+    position: fixed;
+    top: 11.7vh;
+    left: 90vw;
 }
