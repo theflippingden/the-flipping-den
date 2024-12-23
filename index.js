@@ -4,11 +4,17 @@ var themec = document.getElementById("theme3");
 var themed = document.getElementById("theme4");
 var themee = document.getElementById("theme5");
 var themef = document.getElementById("theme6");
+var themes = document.getElementsByClassName("themes")
 function changeColor(clr) {
     document.getElementById("title").style.color = clr;
 }
 function showCS () {
-    
+    document.getElementById("themecell").style.visibility = "visible";
+    document.getElementById("themecellarrow").style.visibility = "visible";
+}
+function hideCS () {
+    document.getElementById("themecell").style.visibility = "hidden";
+    document.getElementById("themecellarrow").style.visibility = "hidden";
 }
 themea.addEventListener("click", function(){changeColor("var(--green)")});
 themeb.addEventListener("click", function(){changeColor("var(--red)")});
@@ -16,3 +22,5 @@ themec.addEventListener("click", function(){changeColor("var(--blue)")});
 themed.addEventListener("click", function(){changeColor("var(--yellow)")});
 themee.addEventListener("click", function(){changeColor("var(--pink)")});
 themef.addEventListener("click", function(){changeColor("var(--aqua)")});
+document.getElementById("themeall").addEventListener("mouseover", showCS);
+document.getElementById("themeall").addEventListener("mouseout", hideCS);

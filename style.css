@@ -24,7 +24,7 @@ p,h1,h2,h3,h4,h5,h6 {
     color: white;
 }
 #navbar {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -64,7 +64,7 @@ p,h1,h2,h3,h4,h5,h6 {
     background-color: var(--aqua);
     top: 45vh;
 }
-#theme,#theme2,#theme3,#theme4,#theme5,#theme6 {
+.themes {
     width: 0;
     height: 5vh;
     padding-right: 5vh;
@@ -101,6 +101,7 @@ p,h1,h2,h3,h4,h5,h6 {
     justify-content: center;
     flex-flow: column wrap;
     border-radius: 10px;
+    visibility: hidden;
 }
 #themecellarrow {
     width: 0px;
@@ -111,4 +112,5 @@ p,h1,h2,h3,h4,h5,h6 {
     position: fixed;
     top: 11.7vh;
     left: 90vw;
+    visibility: hidden;
 }
