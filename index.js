@@ -7,6 +7,9 @@ var themef = document.getElementById("theme6");
 function changeColor(clr) {
     document.getElementById("title").style.color = clr;
 }
+function showCS () {
+    
+}
 themea.addEventListener("click", function(){changeColor("var(--green)")});
 themeb.addEventListener("click", function(){changeColor("var(--red)")});
 themec.addEventListener("click", function(){changeColor("var(--blue)")});

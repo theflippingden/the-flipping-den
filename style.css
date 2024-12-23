@@ -70,8 +70,8 @@ p,h1,h2,h3,h4,h5,h6 {
     border: none;
     transition-duration: 0.7s;
     z-index: 1;
-    margin-top: 3px;
-    margin-bottom: 3px;
+    margin-top: 0.4vh;
+    margin-bottom: 0.4vh;
 }
 #theme:hover, #theme2:hover, #theme3:hover, #theme4:hover, #theme5:hover, #theme6:hover {
     border: none;
