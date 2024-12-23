@@ -23,4 +23,4 @@ themed.addEventListener("click", function(){changeColor("var(--yellow)")});
 themee.addEventListener("click", function(){changeColor("var(--pink)")});
 themef.addEventListener("click", function(){changeColor("var(--aqua)")});
 document.getElementById("themeall").addEventListener("mouseover", showCS);
-document.getElementById("themeall").addEventListener("mouseout", hideCS);
+document.getElementById("themecellcollider").addEventListener("mouseout", hideCS);

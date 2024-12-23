@@ -71,12 +71,11 @@ p,h1,h2,h3,h4,h5,h6 {
     border-radius: 100%;
     border: none;
     transition-duration: 0s;
-    z-index: 1;
+    z-index: 10000;
     margin-top: 0.4vh;
     margin-bottom: 0.4vh;
     margin-left: 0;
     margin-right: 0;
-
 }
 #theme:hover, #theme2:hover, #theme3:hover, #theme4:hover, #theme5:hover, #theme6:hover {
     border: 1px solid white;
@@ -92,6 +91,7 @@ p,h1,h2,h3,h4,h5,h6 {
     position: fixed;
     left: 90vw;
     top: 1.75vh;
+    z-index: 100;
 }
 #themecell {
     width: 6.5vh;
@@ -105,7 +105,7 @@ p,h1,h2,h3,h4,h5,h6 {
     justify-content: center;
     flex-flow: column wrap;
     border-radius: 10px;
-    visibility: visible;
+    visibility: hidden;
     transition-duration: 0s;
 }
 #themecellarrow {
@@ -117,7 +117,7 @@ p,h1,h2,h3,h4,h5,h6 {
     position: fixed;
     top: 11.7vh;
     left: 90vw;
-    visibility: visible;
+    visibility: hidden;
     transition-duration: 0s;
 }
 #themecellcollider {
@@ -128,5 +128,5 @@ p,h1,h2,h3,h4,h5,h6 {
     top: 0vh;
     left: 90vw;
     border-radius: 100px;
-    pointer-events: none;
+    z-index: 0;
 }
