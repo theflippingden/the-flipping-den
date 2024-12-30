@@ -121,3 +121,11 @@ p,h1,h2,h3,h4,h5,h6 {
     transition-duration: 0s;
     z-index: 10;
 }
+.headers{
+    position: relative;
+    text-align: center;
+    padding: 5vw;
+    color: var(--green);
+    font-family: 'Source Code Pro';
+    font-size: 10vw;
+}
