@@ -15,7 +15,9 @@ function hideCS () {
 }
 function changeColor(clr) {
     document.getElementById("title").style.color = clr;
-    document.getElementsByClassName("headers").style.color = clr;
+    for (var i in document.getElementsByClassName("headers")) {
+        document.getElementsByClassName("headers")[i].style.color = clr;
+    }
     hideCS();
 }
 
