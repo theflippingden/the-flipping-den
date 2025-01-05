@@ -17,8 +17,9 @@ function changeColor(clr) {
     document.getElementById("title").style.color = clr;
     for (var i in document.getElementsByClassName("headers")) {
         document.getElementsByClassName("headers")[i].style.color = clr;
+        hideCS();
     }
-    hideCS();
+    
 }
 
 themea.addEventListener("click", function(){changeColor("var(--green)")});
