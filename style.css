@@ -1,13 +1,18 @@
 body {
-    overflow-y: hidden;
+    overflow-x: hidden;
     background-color: rgb(230, 237, 242);
-    height: 100vh;
-    width: 500vw;
-    background-image: linear-gradient(30deg, rgb(227,200,154), rgb(230,237,242));
-    
+    height: 600vh;
 }
 * {
     transition-duration: 0.5s;
+}
+#slow-prlx {
+    background-image: linear-gradient(160deg, rgb(227,200,154), rgb(230,237,242));
+    width: 100vw;
+    height: 300vh;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 #main {
     display: flex;
@@ -33,10 +38,10 @@ body {
 #phrase {
     font-size: 2vw;
 }
-#arrow-right {
+#arrow-down {
     position: fixed;
-    left: 90vw;
-    top: 45vh;
+    left: 45vw;
+    top: 90vh;
     padding: 0;
     margin: 0;
     width: 10vw;
@@ -44,10 +49,12 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    transform: rotate(90deg);
+    transform: rotate(180deg);
+    background-color: rgb(255,255,255,0.2);
+    border-radius: 5vw;
 }
-#arrow-right:hover {
-    left: 88vw;
+#arrow-down:hover {
+    top: 89.5vh;
 }
 .material-symbols-outlined {
     font-size: 10vw;
