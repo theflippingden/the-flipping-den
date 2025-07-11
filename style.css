@@ -13,6 +13,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
+    transition-duration: 10s;
 }
 #main {
     display: flex;
