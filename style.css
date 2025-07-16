@@ -52,8 +52,10 @@ body {
     align-items: center;
     justify-content: center;
 }
-
+#cloud-one-blue {
+    width: 20vw;
+}
 /*
 #80d2ff --> navbar blue, main color in light-mode
-
+#ffAD80 --> complementary orange - use sparingly
 */
