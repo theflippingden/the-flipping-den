@@ -48,12 +48,20 @@ body {
     top: 0;
     background-color: rgb(240,240,240);
     height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 #cloud-one-blue {
-    width: 20vw;
+    position: absolute;
+    top: 30vh;
+    left: 0vw;
+    z-index: 1;
+    width: clamp(10em, 30vw, 20em);
+}
+#cloud-one-black {
+    position: absolute;
+    top: 30.5vh;
+    left: 0vw;
+    z-index: 0;
+    width: clamp(10em, 30vw, 20em);
 }
 /*
 #80d2ff --> navbar blue, main color in light-mode
