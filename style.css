@@ -49,12 +49,20 @@ body {
     background-color: rgb(240,240,240);
     height: 100vh;
 }
+@keyframes cloud-movement {
+    0% {left: -50vw;}
+    100% {left: 120vw;}
+}
 #cloud-one-blue {
     position: absolute;
     top: 30vh;
     left: 0vw;
     z-index: 1;
     width: clamp(10em, 30vw, 20em);
+    animation-name: cloud-movement;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 #cloud-one-black {
     position: absolute;
@@ -62,7 +70,20 @@ body {
     left: 0vw;
     z-index: 0;
     width: clamp(10em, 30vw, 20em);
+    animation-name: cloud-movement;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
+#main-text-title {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    top: 50%;
+    text-shadow: -2px 3px #80d2ff;
+}
+
 /*
 #80d2ff --> navbar blue, main color in light-mode
 #ffAD80 --> complementary orange - use sparingly
