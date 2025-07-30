@@ -1,0 +1,14 @@
+body {
+    background-color: rgb(240,240,255);
+    overflow-x: hidden;
+}
+* {
+    transition-duration: 0.5s;
+}
+#wip-title {
+    position: absolute;
+    margin: 0;
+    top: 45vh;
+    font-family: sans-serif;
+    text-align: center;
+}
