@@ -1,8 +1,11 @@
-body {
+body, html {
     background-color: #f2f2f2;
     overflow-x: hidden;
+}
+body {
     height: 500vh;
 }
+
 * {
     transition-duration: 0.5s;
     font-family: "Oswald";
