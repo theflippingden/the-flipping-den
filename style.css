@@ -45,6 +45,8 @@ body {
 }
 .blog-titles {
     text-align: center;
+    color: black;
+    padding-top: 20vh;
 }
 #header-back {
     position: absolute;
@@ -80,7 +82,4 @@ body {
 }
 #wavesvg2{
     top: 82vh;
-}
-#just-here-to-fix-mobile-scroll-bug {
-    /*why doesnt this work bruh*/
 }
