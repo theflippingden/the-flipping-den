@@ -1,8 +1,7 @@
 body {
     background-color: #f2f2f2;
-    overflow-x: hidden;
     height: 500vh;
-    /*width: 100vw;*/
+    width: 100vw;
 }
 
 
@@ -83,4 +82,12 @@ body {
 }
 #wavesvg2{
     top: 82vh;
+}
+#MSB {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 500vh;
+    overflow-x: hidden;
 }
