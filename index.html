@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=closemenu" />
     <title>TheFlippingDen</title>
     <link rel="stylesheet" href="./style.css">
   </head>
@@ -17,16 +18,33 @@
         <!--<h1 id="wip-title">TheFlippingDen. WORK IN PROGRESS</h1>-->
         <div id="header">
             <h1 id="header-title">the<span id="funtext">flipping</span>den</h1>
+            <div id="open-menu">
+              <button id="home" class="menu-selects">HOME</button>
+              <button id="about" class="menu-selects">ABOUT US</button>
+              <button id="socials" class="menu-selects">SOCIALS</button>
+              <button id="blogs" class="menu-selects">BLOGS</button>
+              <button id="contact-us" class="menu-selects">CONTACT US</button>
+              <button id="business" class="menu-selects">BUSINESS</button>
+            </div>
+            <button id="menu-button">
+                <i class="material-symbols-outlined">
+                menu
+                </i>
+            </button>
+            
         </div>
-        <div id="header-back-landing"></div>
-        <img src="wave.svg" id="wavesvg" class="waves"/>
-        <img src="wave2.svg" id="wavesvg2" class="waves"/>
-        <img src="wave3.svg" id="wavesvg3" class="waves"/>
-        <div id="homepage" class="pages">
+        <div id="opacity-container">
+          <div id="header-back-landing"></div>
+          <img src="wave.svg" id="wavesvg" class="waves"/>
+          <img src="wave2.svg" id="wavesvg2" class="waves"/>
+          <img src="wave3.svg" id="wavesvg3" class="waves"/>
+          <div id="homepage" class="pages">
             <h1 class="blog-titles" style="color: white;">Learn to Flip Items on the Open Market</h1><!---"Learn to Flip Items on the Open Market"-->
             <p style="color: white; text-align: center;">with help from our guides, blogs and tutorials!</p><!--"with help from our guides, blogs and tutorials!"-->
+          </div>
         </div>
+        
     </div>
-    <script src="index.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
