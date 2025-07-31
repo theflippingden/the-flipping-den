@@ -67,7 +67,7 @@ body {
     position: absolute;
     top: 80vh;
     left: 0;
-    width: 100vw;
+    width: 101vw;
     z-index: -1;
     opacity: 50%;
 }
