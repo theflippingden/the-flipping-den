@@ -2,6 +2,7 @@ body {
     background-color: #f2f2f2;
     height: 500vh;
     width: 100vw;
+    overflow-x: hidden;
 }
 
 
@@ -36,8 +37,11 @@ body {
 }
 #funtext {
     display: inline-block;
-    transform: skewY(3deg);
+    transform: skew(3deg, 3deg);
     color: #efad5d;
+}
+#funtext:hover {
+    transform: skew(-3deg, -3deg);
 }
 .pages {
     position: relative;
