@@ -1,14 +1,81 @@
 body {
-    background-color: rgb(240,240,255);
+    background-color: #f2f2f2;
     overflow-x: hidden;
+    height: 500vh;
 }
 * {
     transition-duration: 0.5s;
+    font-family: "Oswald";
 }
 #wip-title {
     position: absolute;
     margin: 0;
     top: 45vh;
-    font-family: sans-serif;
+    font-family: "Oswald";
     text-align: center;
+}
+#header {
+    position: fixed;
+    top: 1vh;
+    left: 2.5vw;
+    width: 95vw;
+    height: 10vh;
+    background-color: #f2f2f2;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 10;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+#header-title {
+    font-size: 1.2em;
+    font-weight: 300;
+}
+#funtext {
+    display: inline-block;
+    transform: skewY(3deg);
+    color: #efad5d;
+}
+.pages {
+    position: relative;
+    top: 20vh;
+}
+.blog-titles {
+    text-align: center;
+}
+#header-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 20vh;
+    background-color: #efad5d;
+    display: none;
+    z-index: 5;   
+}
+#header-back-landing {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 81vh;
+    background-color: rgb(5,23,42,1);
+    z-index: 0;
+}
+.waves {
+    position: absolute;
+    top: 80vh;
+    left: 0;
+    width: 100vw;
+    z-index: -1;
+    opacity: 50%;
+}
+#wavesvg {
+    opacity: 100%;
+    top: 80vh;
+    z-index: 0;
+}
+#wavesvg2{
+    top: 82vh;
 }
