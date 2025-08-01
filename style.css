@@ -119,23 +119,29 @@ body {
 }
 
 #open-menu {
-    display: none;
-    width: 70vw;
-    height: 90vh;
-    background-color: rgb(0,0,0,0);
+    position: fixed;
+    display: flex;
+    top: 15vh;
+    left: 102.5vw;
+    width: 95vw;
+    height: 82.5vh;
+    border-radius: 10px;
+    border: 1px solid rgb(5,23,42);
+    background-color: #f2f2f2;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     flex-flow: column wrap;
-    z-index: -5;
+    z-index: 5;
 }
 .menu-selects {
     border: none;
+    text-align: center;
     background-color: rgb(0,0,0,0);
     color: black;
     font-size: 2.5em;
     font-weight: 200;
-    width: 70vw;
-    height: 15vh;
+    width: 95vw;
+    height: calc(82.5vh/6);
     z-index: 0;
     transition-duration: 0.2s;
     top: 0;

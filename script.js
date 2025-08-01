@@ -10,21 +10,14 @@ var menuOpen = false;
 var menuSelects = document.getElementsByClassName("menu-selects");
 function toggleMenu() {
     if (menuOpen == false){
-        document.getElementById("header").style.height = "90vh";
-        document.getElementById("header").style.alignItems = "top";
-        document.getElementById("header-title").style.display = "none";
         document.getElementById("opacity-container").style.opacity = "50%";
         menuBtn.innerHTML = "<i class='material-symbols-outlined'>close</i>";
-        document.getElementById("open-menu").style.display = "flex";
-            
+        document.getElementById("open-menu").style.left = "2.5vw";
         menuOpen = true;
     } else {
-        document.getElementById("header").style.height = "10vh";
         menuBtn.innerHTML = "<i class='material-symbols-outlined'>menu</i>";
         document.getElementById("opacity-container").style.opacity = "100%";
-        document.getElementById("open-menu").style.display = "none";
-        
-        document.getElementById("header-title").style.display = "inline";
+        document.getElementById("open-menu").style.left = "102.5vw";
         menuOpen = false;
     }
     
