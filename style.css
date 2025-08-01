@@ -172,4 +172,7 @@ body {
     #night-button {
         display: inline-block;
     }
+    #header {
+        top: 2.5vh;
+    }
 }
