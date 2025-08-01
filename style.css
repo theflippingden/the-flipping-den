@@ -87,6 +87,7 @@ body {
     overflow-x: hidden;
 }
 .material-symbols-outlined {
+    color: var(--dark);
   font-variation-settings:
   'FILL' 0,
   'wght' 400,
