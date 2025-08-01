@@ -1,10 +1,16 @@
 body {
-    background-color: #f2f2f2;
+    background-color: var(--white);
     height: 500vh;
     width: 100vw;
     overflow-x: hidden;
 }
-
+:root {
+    --white: #f2f2f2;
+    --dark: #1c1c1c;
+    --black: #000000;
+    --blue: rgb(5,23,42);
+    --orange: #efad5d;
+}
 
 * {
     transition-duration: 0.5s;
@@ -23,12 +29,12 @@ body {
     left: 2.5vw;
     width: 95vw;
     height: 10vh;
-    background-color: #f2f2f2;
+    background-color: var(--white);
     display: flex;
     align-items: center;
     justify-content: space-between;
     z-index: 100;
-    border: 1px solid rgb(5,23,42);
+    border: 1px solid var(--blue);
     border-radius: 10px;
 }
 #header-title {
@@ -37,11 +43,12 @@ body {
     padding-left: 5vw;
     padding-right: 5vw;
     margin: auto;
+    color: var(--black);
 }
 #funtext {
     display: inline-block;
     transform: skew(3deg, 3deg);
-    color: #efad5d;
+    color: var(--orange);
 }
 #funtext:hover {
     transform: skew(-3deg, -3deg);
@@ -52,27 +59,8 @@ body {
 }
 .blog-titles {
     text-align: center;
-    color: black;
+    color: var(--black);
     padding-top: 20vh;
-}
-#header-back {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 20vh;
-    background-color: #efad5d;
-    display: none;
-    z-index: 5;   
-}
-#header-back-landing {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 101vw;
-    height: 81vh;
-    background-color: rgb(5,23,42,1);
-    z-index: 0;
 }
 .waves {
     position: absolute;
@@ -113,6 +101,7 @@ body {
     text-align: center;
     margin: 0;
     line-height: 1vh;
+    color: var(--dark);
 }
 #menu-button:hover {
     background-color: rgb(0,0,0,0.1);
@@ -127,6 +116,7 @@ body {
     line-height: 1vh;
     margin-left: auto;
     display: none;
+    color: var(--dark);
 }
 #night-button:hover {
     background-color: rgb(0,0,0,0.1);
@@ -139,8 +129,8 @@ body {
     width: 95vw;
     height: 82.5vh;
     border-radius: 10px;
-    border: 1px solid rgb(5,23,42);
-    background-color: #f2f2f2;
+    border: 1px solid var(--blue);
+    background-color: var(--white);
     align-items: center;
     justify-content: center;
     flex-flow: column wrap;
@@ -150,7 +140,7 @@ body {
     border: none;
     text-align: center;
     background-color: rgb(0,0,0,0);
-    color: black;
+    color: var(--black);
     font-size: 2.5em;
     font-weight: 200;
     width: 95vw;
@@ -167,7 +157,6 @@ body {
 @media screen and (min-width: 768px) {
     #header-title {
         margin: 0;
-
     }
     #night-button {
         display: inline-block;
