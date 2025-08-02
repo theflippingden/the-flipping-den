@@ -2,8 +2,11 @@ body {
     background-color: var(--white);
     height: 500vh;
     width: 100vw;
+    overflow-x: hidden;
+    position: relative;
+    margin: 0;
 }
-body, html {
+html {
     overflow-x: hidden;
 }
 :root {
@@ -91,6 +94,7 @@ body, html {
 #wavesvg2{
     top: 2vh;
 }
+/*
 #MSB {
     position: absolute;
     top: 0;
@@ -99,6 +103,7 @@ body, html {
     height: 500vh;
     overflow-x: hidden;
 }
+*/
 .material-symbols-outlined {
     color: var(--dark);
   font-variation-settings:
