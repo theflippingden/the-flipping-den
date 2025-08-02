@@ -81,9 +81,10 @@ html {
 .waves {
     position: absolute;
     top: 0vh;
+    left: -2.5px;
     z-index: -1;
     opacity: 50%;
-    width: 380px;
+    width: 382.5px;
     transition-duration: 0s;
     transform-origin: left;
 }
