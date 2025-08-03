@@ -1,4 +1,4 @@
-//fix for the waves so they stretch, need js math for this 1
+//Variables
 var waveJS = document.getElementsByClassName("waves");
 var menuBtn = document.getElementById("menu-button");
 var menuOpen = false;
@@ -9,6 +9,7 @@ var nightBtn = document.getElementById("night-button");
 var rootJS = document.documentElement;
 var headerTitle = document.getElementById("header-title");
 var headerz = document.getElementById("header");
+//Functions
 for (var i=0; i<waveJS.length; i++){
     document.getElementsByClassName("waves")[i].style.transform = "scaleX(calc(" + window.innerWidth + "/380))";
 }
@@ -49,7 +50,6 @@ function toggleMenu() {
     }
     
 };
-
 function toggleDarkMode() {
     if (darkMode == false) {
         rootJS.style.setProperty('--white', '#1c1c1c');
@@ -67,6 +67,8 @@ function toggleDarkMode() {
         darkMode = false;
     }
 }
+//Event Listeners
 menuBtn.addEventListener("click", toggleMenu);
 nightBtn.addEventListener("click", toggleDarkMode);
 window.addEventListener("resize", resizeWaves);
+//Page Functionality! Doing this from scratch with the help of ol' friend StackOverflow. i'll start work on this after doing the navbar 4 computer
