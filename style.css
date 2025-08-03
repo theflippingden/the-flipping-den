@@ -256,7 +256,8 @@ html {
     justify-content: center;
 }
 .header-btns {
-    background-color: rgb(0,0,0,0.5);
+    background-color: rgb(0,0,0,0);
+    color: var(--black);
     border: none;
     width: 8vw;
     height: 10vh;
@@ -268,7 +269,6 @@ html {
 }
 .header-btns:hover {
     font-size: 0.9em;
-    background-color: rgb(0,0,0,0.1)
 }
 @media screen and (min-width: 768px) {
     #header-title {
