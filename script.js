@@ -73,5 +73,6 @@ nightBtn.addEventListener("click", toggleDarkMode);
 window.addEventListener("resize", resizeWaves);
 //Page Functionality
 var siteURL = document.URL;
-alert(siteURL);
+var siteTag = siteURL.split("/")[1];
+alert(siteTag);
 
