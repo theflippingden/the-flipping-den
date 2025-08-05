@@ -71,4 +71,7 @@ function toggleDarkMode() {
 menuBtn.addEventListener("click", toggleMenu);
 nightBtn.addEventListener("click", toggleDarkMode);
 window.addEventListener("resize", resizeWaves);
-//Page Functionality! Doing this from scratch with the help of ol' friend StackOverflow. i'll start work on this after doing the navbar 4 computer
+//Page Functionality
+var siteURL = document.URL;
+alert(siteURL);
+
