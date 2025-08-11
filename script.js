@@ -79,16 +79,17 @@ var siteTag = siteURL.split("/")[3];
     if (siteTag == ("home" || "")) {
         pagesJS[0].style.display = "inline-block";
         pagesJS[1].style.display = "inline-block";
-    } else if (siteTag = "about-us") {
         pagesJS[2].style.display = "inline-block";
-    } else if (siteTag = "socials") {
+    } else if (siteTag = "about-us") {
         pagesJS[3].style.display = "inline-block";
-    } else if (siteTag = "blogs") {
+    } else if (siteTag = "socials") {
         pagesJS[4].style.display = "inline-block";
-    } else if (siteTag = "contact-us") {
+    } else if (siteTag = "blogs") {
         pagesJS[5].style.display = "inline-block";
-    } else if (siteTag = "business") {
+    } else if (siteTag = "contact-us") {
         pagesJS[6].style.display = "inline-block";
+    } else if (siteTag = "business") {
+        pagesJS[7].style.display = "inline-block";
     } else {
         window.location = "https://theflippingden.com/home";
     }
