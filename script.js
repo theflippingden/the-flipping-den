@@ -55,7 +55,7 @@ function toggleMenu() {
 function toggleDarkMode() {
     console.log(localStorage.getItem("darkmode"));
     console.log("is the local storage darkmode variable");
-    if (localStorage.getItem("darkmode") == false) {
+    if (localStorage.getItem("darkmode") == "false") {
         rootJS.style.setProperty('--white', '#1c1c1c');
         rootJS.style.setProperty('--dark', '#f2f2f2');
         rootJS.style.setProperty('--black', '#ffffff');
@@ -63,7 +63,7 @@ function toggleDarkMode() {
         nightBtn.innerHTML = "<i class='material-symbols-outlined'>wb_sunny</i>";
         localStorage.setItem("darkmode", true);
         console.log("Dark Mode Toggled ON via Night button");
-    } else {
+    } else if (localStorage.getItem("darkmode") == "true"){
         rootJS.style.setProperty('--white', '#f2f2f2');
         rootJS.style.setProperty('--dark', '#1c1c1c');
         rootJS.style.setProperty('--black', '#000000');
@@ -74,14 +74,14 @@ function toggleDarkMode() {
     }
 }
 function restateDarkMode() {
-    if (localStorage.getItem("darkmode") = false) {
+    if (localStorage.getItem("darkmode") == "false") {
         rootJS.style.setProperty('--white', '#f2f2f2');
         rootJS.style.setProperty('--dark', '#1c1c1c');
         rootJS.style.setProperty('--black', '#000000');
         document.getElementById("header").style.border = "1px solid var(--blue)";
         nightBtn.innerHTML = "<i class='material-symbols-outlined'>bedtime</i>";
         console.log("Light Mode RESTATED via restateDarkMode");
-    } else {
+    } else if (localStorage.getItem("darkmode") == "true") {
         rootJS.style.setProperty('--white', '#1c1c1c');
         rootJS.style.setProperty('--dark', '#f2f2f2');
         rootJS.style.setProperty('--black', '#ffffff');
@@ -120,6 +120,6 @@ var siteTag = siteURL.split("/")[3];
     } else {
         window.location = "https://theflippingden.com/home";
     }
-    //restateDarkMode();
+    restateDarkMode();
 })();
 
