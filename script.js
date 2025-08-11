@@ -6,6 +6,7 @@ var menuSelects = document.getElementsByClassName("menu-selects");
 var computer = window.matchMedia("(min-width: 768px)");
 //var darkMode = false; // replace all instances of darkMode with localstorage darkmode
 localStorage.setItem("darkmode", false);
+console.log("INITIAL LOCALSTORAGE DARKMODE IS" + localStorage.getItem("darkmode"));
 var nightBtn = document.getElementById("night-button");
 var rootJS = document.documentElement;
 var headerTitle = document.getElementById("header-title");
@@ -52,6 +53,8 @@ function toggleMenu() {
     
 };
 function toggleDarkMode() {
+    console.log(localStorage.getItem("darkmode"));
+    console.log("is the local storage darkmode variable");
     if (localStorage.getItem("darkmode") == false) {
         rootJS.style.setProperty('--white', '#1c1c1c');
         rootJS.style.setProperty('--dark', '#f2f2f2');
@@ -59,6 +62,7 @@ function toggleDarkMode() {
         document.getElementById("header").style.border = "1px solid var(--black)";
         nightBtn.innerHTML = "<i class='material-symbols-outlined'>wb_sunny</i>";
         localStorage.setItem("darkmode", true);
+        console.log("Dark Mode Toggled ON via Night button");
     } else {
         rootJS.style.setProperty('--white', '#f2f2f2');
         rootJS.style.setProperty('--dark', '#1c1c1c');
@@ -66,21 +70,24 @@ function toggleDarkMode() {
         document.getElementById("header").style.border = "1px solid var(--blue)";
         nightBtn.innerHTML = "<i class='material-symbols-outlined'>bedtime</i>";
         localStorage.setItem("darkmode", false);
+        console.log("Dark Mode Toggled OFF via Night button");
     }
 }
 function restateDarkMode() {
-    if (localStorage.getItem("darkmode") == false) {
+    if (localStorage.getItem("darkmode") = false) {
         rootJS.style.setProperty('--white', '#f2f2f2');
         rootJS.style.setProperty('--dark', '#1c1c1c');
         rootJS.style.setProperty('--black', '#000000');
         document.getElementById("header").style.border = "1px solid var(--blue)";
         nightBtn.innerHTML = "<i class='material-symbols-outlined'>bedtime</i>";
+        console.log("Light Mode RESTATED via restateDarkMode");
     } else {
         rootJS.style.setProperty('--white', '#1c1c1c');
         rootJS.style.setProperty('--dark', '#f2f2f2');
         rootJS.style.setProperty('--black', '#ffffff');
         document.getElementById("header").style.border = "1px solid var(--black)";
         nightBtn.innerHTML = "<i class='material-symbols-outlined'>wb_sunny</i>";
+        console.log("Dark Mode RESTATED via restateDarkMode");
     }
 }
 //Event Listeners
@@ -113,6 +120,6 @@ var siteTag = siteURL.split("/")[3];
     } else {
         window.location = "https://theflippingden.com/home";
     }
-    restateDarkMode();
+    //restateDarkMode();
 })();
 
