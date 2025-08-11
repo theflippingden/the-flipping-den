@@ -72,7 +72,26 @@ menuBtn.addEventListener("click", toggleMenu);
 nightBtn.addEventListener("click", toggleDarkMode);
 window.addEventListener("resize", resizeWaves);
 //Page Functionality
+var pagesJS = document.getElementsByClassName("pages");
 var siteURL = document.URL;
 var siteTag = siteURL.split("/")[3];
-alert(siteTag);
+(function pageCheck() {
+    if (siteTag == ("home" || "")) {
+        pagesJS[0].style.display = "inline-block";
+        pagesJS[1].style.display = "inline-block";
+    } else if (siteTag = "about-us") {
+        pagesJS[2].style.display = "inline-block";
+    } else if (siteTag = "socials") {
+        pagesJS[3].style.display = "inline-block";
+    } else if (siteTag = "blogs") {
+        pagesJS[4].style.display = "inline-block";
+    } else if (siteTag = "contact-us") {
+        pagesJS[5].style.display = "inline-block";
+    } else if (siteTag = "business") {
+        pagesJS[6].style.display = "inline-block";
+    } else {
+        window.location = "https://theflippingden.com/home";
+    }
+    alert(pagesJS);
+})();
 
