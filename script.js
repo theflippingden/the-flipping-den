@@ -4,7 +4,8 @@ var menuBtn = document.getElementById("menu-button");
 var menuOpen = false;
 var menuSelects = document.getElementsByClassName("menu-selects");
 var computer = window.matchMedia("(min-width: 768px)");
-var darkMode = false;
+//var darkMode = false; // replace all instances of darkMode with localstorage darkmode
+localStorage.setItem("darkmode", false);
 var nightBtn = document.getElementById("night-button");
 var rootJS = document.documentElement;
 var headerTitle = document.getElementById("header-title");
@@ -51,20 +52,35 @@ function toggleMenu() {
     
 };
 function toggleDarkMode() {
-    if (darkMode == false) {
+    if (localStorage.getItem("darkmode") == false) {
         rootJS.style.setProperty('--white', '#1c1c1c');
         rootJS.style.setProperty('--dark', '#f2f2f2');
         rootJS.style.setProperty('--black', '#ffffff');
         document.getElementById("header").style.border = "1px solid var(--black)";
         nightBtn.innerHTML = "<i class='material-symbols-outlined'>wb_sunny</i>";
-        darkMode = true;
+        localStorage.setItem("darkmode", true);
     } else {
         rootJS.style.setProperty('--white', '#f2f2f2');
         rootJS.style.setProperty('--dark', '#1c1c1c');
         rootJS.style.setProperty('--black', '#000000');
         document.getElementById("header").style.border = "1px solid var(--blue)";
         nightBtn.innerHTML = "<i class='material-symbols-outlined'>bedtime</i>";
-        darkMode = false;
+        localStorage.setItem("darkmode", false);
+    }
+}
+function restateDarkMode() {
+    if (localStorage.getItem("darkmode") == false) {
+        rootJS.style.setProperty('--white', '#f2f2f2');
+        rootJS.style.setProperty('--dark', '#1c1c1c');
+        rootJS.style.setProperty('--black', '#000000');
+        document.getElementById("header").style.border = "1px solid var(--blue)";
+        nightBtn.innerHTML = "<i class='material-symbols-outlined'>bedtime</i>";
+    } else {
+        rootJS.style.setProperty('--white', '#1c1c1c');
+        rootJS.style.setProperty('--dark', '#f2f2f2');
+        rootJS.style.setProperty('--black', '#ffffff');
+        document.getElementById("header").style.border = "1px solid var(--black)";
+        nightBtn.innerHTML = "<i class='material-symbols-outlined'>wb_sunny</i>";
     }
 }
 //Event Listeners
@@ -97,5 +113,6 @@ var siteTag = siteURL.split("/")[3];
     } else {
         window.location = "https://theflippingden.com/home";
     }
+    restateDarkMode();
 })();
 
