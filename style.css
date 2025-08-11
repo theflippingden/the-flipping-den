@@ -48,6 +48,7 @@ html {
     padding-left: 5vw;
     padding-right: 5vw;
     margin: auto;
+    display: inline-block;
     color: var(--black);
 }
 #funtext {
@@ -122,10 +123,11 @@ html {
 #menu-button {
     background-color: rgb(255,255,255,0);
     border: none;
+    padding: none;
     width: 10vh;
     height: 10vh;
     text-align: center;
-    margin: 0;
+    margin: none;
     line-height: 1vh;
     color: var(--dark);
     max-width: 45vw;
@@ -137,7 +139,8 @@ html {
 #night-button {
     background-color: rgb(255,255,255,0);
     border: none;
-    width: 10vh;
+    padding: none;
+    width: 20vh;
     height: 10vh;
     text-align: center;
     margin: 0;
@@ -291,6 +294,7 @@ html {
     }
     #night-button {
         display: inline-block;
+        width: 10vh;
         transition-duration: 0.5s;
     }
     #menu-button {

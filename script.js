@@ -30,10 +30,10 @@ function toggleMenu() {
         if (!computer.matches) {
             nightBtn.style.display = "inline-block";
             headerTitle.style.display = "none";
-            headerz.style.justifyContent = "space-around";
-            nightBtn.style.marginLeft = "0";
+            //headerz.style.justifyContent = "space-between";
+            //nightBtn.style.marginLeft = "0";
             menuBtn.style.width = "20vh";
-            nightBtn.style.width = "20vh";
+            //nightBtn.style.width = "20vh";
         }
         menuOpen = true;
     } else {
@@ -45,9 +45,9 @@ function toggleMenu() {
             nightBtn.style.display = "none";
             headerTitle.style.display = "inline-block";
             headerz.style.justifyContent = "space-between";
-            nightBtn.style.marginLeft = "auto";
+            //nightBtn.style.marginLeft = "auto";
             menuBtn.style.width = "10vh";
-            nightBtn.style.width = "10vh";
+            //nightBtn.style.width = "10vh";
         }
     }
     
@@ -103,7 +103,9 @@ var pagesJS = document.getElementsByClassName("pages");
 var siteURL = document.URL;
 var siteTag = siteURL.split("/")[3];
 (function pageCheck() {
-    console.log(siteTag);
+    for (var z=0; z<pagesJS.length; z++) {
+        pagesJS[z].style.display = "none";
+    }
     if (siteTag == "") {
         pagesJS[0].style.display = "inline-block";
         pagesJS[1].style.display = "inline-block";
@@ -127,4 +129,4 @@ var siteTag = siteURL.split("/")[3];
     }
     restateDarkMode();
 })();
-
+console.log(window.innerHeight);
