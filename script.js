@@ -81,7 +81,9 @@ var siteTag = siteURL.split("/")[3];
         pagesJS[1].style.display = "inline-block";
         pagesJS[2].style.display = "inline-block";
     } else if (siteTag = "home") {
-
+        pagesJS[0].style.display = "inline-block";
+        pagesJS[1].style.display = "inline-block";
+        pagesJS[2].style.display = "inline-block";
     } else if(siteTag = "about-us") {
         pagesJS[3].style.display = "inline-block";
     } else if (siteTag = "socials") {
