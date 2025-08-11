@@ -92,6 +92,8 @@ var siteTag = siteURL.split("/")[3];
     } else {
         window.location = "https://theflippingden.com/home";
     }
-    alert(pagesJS);
+    for (var z=0; z<pagesJS.length; z++) {
+        console.log(pagesJS[z]);
+    }
 })();
 
