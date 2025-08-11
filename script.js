@@ -76,7 +76,7 @@ var pagesJS = document.getElementsByClassName("pages");
 var siteURL = document.URL;
 var siteTag = siteURL.split("/")[3];
 (function pageCheck() {
-    if (siteTag == ("home" || "")) {
+    if (siteTag == ("home" || none)) {
         pagesJS[0].style.display = "inline-block";
         pagesJS[1].style.display = "inline-block";
         pagesJS[2].style.display = "inline-block";

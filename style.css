@@ -280,6 +280,10 @@ html {
 .header-btns:hover {
     font-size: 0.9em;
 }
+#hta {
+    color: var(--black);
+        text-decoration: none;
+}
 
 @media screen and (min-width: 768px) {
     #header-title {
