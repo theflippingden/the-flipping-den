@@ -75,6 +75,7 @@ window.addEventListener("resize", resizeWaves);
 var pagesJS = document.getElementsByClassName("pages");
 var siteURL = document.URL;
 var siteTag = siteURL.split("/")[3];
+alert(siteTag);
 (function pageCheck() {
     if (siteTag == ("home" || none)) {
         pagesJS[0].style.display = "inline-block";
