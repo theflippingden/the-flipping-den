@@ -77,7 +77,7 @@ var siteURL = document.URL;
 var siteTag = siteURL.split("/")[3];
 alert(siteTag);
 (function pageCheck() {
-    if (siteTag == ("home" || none)) {
+    if (siteTag == ("")) {
         pagesJS[0].style.display = "inline-block";
         pagesJS[1].style.display = "inline-block";
         pagesJS[2].style.display = "inline-block";
