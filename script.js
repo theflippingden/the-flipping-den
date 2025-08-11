@@ -103,6 +103,7 @@ var pagesJS = document.getElementsByClassName("pages");
 var siteURL = document.URL;
 var siteTag = siteURL.split("/")[3];
 (function pageCheck() {
+    console.log(siteTag);
     if (siteTag == "") {
         pagesJS[0].style.display = "inline-block";
         pagesJS[1].style.display = "inline-block";
