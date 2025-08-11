@@ -272,10 +272,15 @@ html {
     transition-duration: 0.2s;
     margin: auto;
     display: none;
+    a {
+        color: var(--black);
+        text-decoration: none;
+    }
 }
 .header-btns:hover {
     font-size: 0.9em;
 }
+
 @media screen and (min-width: 768px) {
     #header-title {
         margin: 0;
