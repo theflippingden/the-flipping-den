@@ -132,7 +132,11 @@ var siteTag = siteURL.split("/")[3];
         pagesJS[7].style.display = "inline-block";
         console.log("Loaded business page via business");
     } else {
-        window.location = "https://theflippingden.com/home";
+        document.body.innerHTML = "<h1>url not found, redirecting to home</h1>";
+        const reloadPause = setTimeout(function(){
+            window.location = "https://theflippingden.com/home";
+        }, 1000);
+        
     }
     restateDarkMode();
 })();
