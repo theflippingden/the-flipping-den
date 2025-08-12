@@ -18,7 +18,7 @@ for (var i=0; i<waveJS.length; i++){
 
 function resizeWaves() {
     for (var i=0; i<waveJS.length; i++){
-        document.getElementsByClassName("waves")[i].style.transform = "scaleX(calc(" + window.innerWidth + "/380))";
+        document.getElementsByClassName("waves")[i].style.transform = "scale(calc(" + window.innerWidth + "/380), calc(" + window.innerHeight + "/694))";
     }
 }
 

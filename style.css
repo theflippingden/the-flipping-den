@@ -93,7 +93,7 @@ html {
     opacity: 50%;
     width: 382.5px;
     transition-duration: 0s;
-    transform-origin: left;
+    transform-origin: left top;
 }
 #wavesvg {
     opacity: 100%;
