@@ -110,26 +110,33 @@ var siteTag = siteURL.split("/")[3];
         pagesJS[0].style.display = "inline-block";
         pagesJS[1].style.display = "inline-block";
         pagesJS[2].style.display = "inline-block";
+        document.title = "Home | The Flipping Den";
         console.log("Loaded home page via blank");
     } else if (siteTag == "home") {
         pagesJS[0].style.display = "inline-block";
         pagesJS[1].style.display = "inline-block";
         pagesJS[2].style.display = "inline-block";
+        document.title = "Home | The Flipping Den";
         console.log("Loaded home page via home");
     } else if (siteTag == "about-us") {
         pagesJS[3].style.display = "inline-block";
+        document.title = "About Us | The Flipping Den";
         console.log("Loaded about page via about");
     } else if (siteTag == "socials") {
         pagesJS[4].style.display = "inline-block";
+        document.title = "Socials | The Flipping Den";
         console.log("Loaded socials page via socials");
     } else if (siteTag == "blogs") {
         pagesJS[5].style.display = "inline-block";
+        document.title = "Blogs | The Flipping Den";
         console.log("Loaded blogs page via blogs");
     } else if (siteTag == "contact-us") {
         pagesJS[6].style.display = "inline-block";
+        document.title = "Contact Us | The Flipping Den";
         console.log("Loaded contact page via contact-us");
     } else if (siteTag == "business") {
         pagesJS[7].style.display = "inline-block";
+        document.title = "Business | The Flipping Den";
         console.log("Loaded business page via business");
     } else {
         document.body.innerHTML = "<h1 style='color: var(--black); text-align: center; line-height: 100vh; position: relative;'>URL not found, redirecting to home in 2 seconds...</h1>";
