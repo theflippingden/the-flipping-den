@@ -111,24 +111,24 @@ var siteTag = siteURL.split("/")[3];
         pagesJS[1].style.display = "inline-block";
         pagesJS[2].style.display = "inline-block";
         console.log("Loaded home page via blank");
-    } else if (siteTag = "home") {
+    } else if (siteTag == "home") {
         pagesJS[0].style.display = "inline-block";
         pagesJS[1].style.display = "inline-block";
         pagesJS[2].style.display = "inline-block";
         console.log("Loaded home page via home");
-    } else if (siteTag = "about-us") {
+    } else if (siteTag == "about-us") {
         pagesJS[3].style.display = "inline-block";
         console.log("Loaded about page via about");
-    } else if (siteTag = "socials") {
+    } else if (siteTag == "socials") {
         pagesJS[4].style.display = "inline-block";
         console.log("Loaded socials page via socials");
-    } else if (siteTag = "blogs") {
+    } else if (siteTag == "blogs") {
         pagesJS[5].style.display = "inline-block";
         console.log("Loaded blogs page via blogs");
-    } else if (siteTag = "contact-us") {
+    } else if (siteTag == "contact-us") {
         pagesJS[6].style.display = "inline-block";
         console.log("Loaded contact page via contact-us");
-    } else if (siteTag = "business") {
+    } else if (siteTag == "business") {
         pagesJS[7].style.display = "inline-block";
         console.log("Loaded business page via business");
     } else {
