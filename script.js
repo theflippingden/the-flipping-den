@@ -103,9 +103,9 @@ var pagesJS = document.getElementsByClassName("pages");
 var siteURL = document.URL;
 var siteTag = siteURL.split("/")[3];
 var postArr = [
-    ["loremipsum", "Lorem Ipsum"],
-    ["filler", "Filler Things"],
-    ["filler-guide", "The Guide to Filling"]
+    ["starterguide", "The Starter Guide: Everything that you need to know to start earning profit", 0],
+    ["shoes", "Shoes - A Lucrative but Tricky Market", 0],
+    ["pokemon-cards", "Pokemon Cards - Free Money or a Sham?", 0]
 ];
 (function pageCheck() {
     for (var z=0; z<pagesJS.length; z++) {
