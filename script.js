@@ -10,7 +10,7 @@ console.log("INITIAL LOCALSTORAGE DARKMODE IS" + localStorage.getItem("darkmode"
 var nightBtn = document.getElementById("night-button");
 var rootJS = document.documentElement;
 var headerTitle = document.getElementById("header-title");
-var headerz = document.getElementById("header");
+var headerz = document.getElementById("big-header");
 //Functions
 for (var i=0; i<waveJS.length; i++){
     document.getElementsByClassName("waves")[i].style.transform = "scaleX(calc(" + window.innerWidth + "/380))";
@@ -26,7 +26,8 @@ function toggleMenu() {
     if (menuOpen == false){
         document.getElementById("opacity-container").style.opacity = "50%";
         menuBtn.innerHTML = "<i class='material-symbols-outlined'>close</i>";
-        document.getElementById("open-menu").style.left = "2.5vw";
+        document.getElementById("open-menu").style.left = "102.5vw";
+        headerz.style.height = "50vh";
         if (!computer.matches) {
             nightBtn.style.display = "inline-block";
             headerTitle.style.display = "none";
@@ -40,6 +41,7 @@ function toggleMenu() {
         menuBtn.innerHTML = "<i class='material-symbols-outlined'>menu</i>";
         document.getElementById("opacity-container").style.opacity = "100%";
         document.getElementById("open-menu").style.left = "102.5vw";
+        headerz.style.height = "10vh";
         menuOpen = false;
         if (!computer.matches) {
             nightBtn.style.display = "none";
