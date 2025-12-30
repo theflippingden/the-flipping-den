@@ -154,8 +154,8 @@ var flagFeatured = false;
         flagFeatured = false;
         for (var x=0; x<postArr.length; x++) {
             if (siteTag == postArr[x][0]) {
-                pagesJS[8][x].style.display = "inline-block";
-                console.log(pagesJS[8][x]);
+                pagesJS[8].children[x].style.display = "inline-block";
+                console.log(pagesJS[8].children[x]);
                 document.title = "Post | " + postArr[x][1];
                 flagFeatured = true;
             }
