@@ -159,7 +159,7 @@ var flagFeatured = false;
                 flagFeatured = true;
             }
         }
-        if (flagFeatured = false) {
+        if (flagFeatured == false) {
             document.body.innerHTML = "<h1 style='color: var(--black); text-align: center; line-height: 100vh; position: relative;'>URL not found, redirecting to home in 2 seconds...</h1>";
             const reloadPause = setTimeout(function(){
                 window.location = "https://theflippingden.com/home";
