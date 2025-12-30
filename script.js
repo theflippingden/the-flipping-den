@@ -100,13 +100,18 @@ nightBtn.addEventListener("click", toggleDarkMode);
 window.addEventListener("resize", resizeWaves);
 //Page Functionality
 var pagesJS = document.getElementsByClassName("pages");
+console.log(pagesJS);
 var siteURL = document.URL;
 var siteTag = siteURL.split("/")[3];
 var postArr = [
     ["starterguide", "The Starter Guide: Everything that you need to know to start earning profit", 0],
     ["shoes", "Shoes - A Lucrative but Tricky Market", 0],
-    ["pokemon-cards", "Pokemon Cards - Free Money or a Sham?", 0]
+    ["pokemon-cards", "Pokemon Cards - A Cash Printer", 0]
 ];
+function loadFeatured() {
+    
+};
+var flagFeatured = false;
 (function pageCheck() {
     for (var z=0; z<pagesJS.length; z++) {
         pagesJS[z].style.display = "none";
@@ -144,17 +149,20 @@ var postArr = [
         document.title = "Business | The Flipping Den";
         console.log("Loaded business page via business");
     } else {
+        flagFeatured = false;
         for (var x=0; x<postArr.length; x++) {
             if (siteTag == postArr[x][0]) {
                 pagesJS[8][x].style.display = "inline-block";
                 document.title = "Post | " + postArr[x][1];
+                flagFeatured = true;
             }
         }
-        document.body.innerHTML = "<h1 style='color: var(--black); text-align: center; line-height: 100vh; position: relative;'>URL not found, redirecting to home in 2 seconds...</h1>";
-        const reloadPause = setTimeout(function(){
-            window.location = "https://theflippingden.com/home";
-        }, 2000);
-        
+        if (flagFeatured = false) {
+            document.body.innerHTML = "<h1 style='color: var(--black); text-align: center; line-height: 100vh; position: relative;'>URL not found, redirecting to home in 2 seconds...</h1>";
+            const reloadPause = setTimeout(function(){
+                window.location = "https://theflippingden.com/home";
+            }, 2000);
+        }
     }
     restateDarkMode();
 })();

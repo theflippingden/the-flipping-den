@@ -217,7 +217,7 @@ html {
     border-right: 2px solid black;
     float: right;
 }
-#postgrid {
+#featuredpostgrid {
     width: 90vw;
     background-color: #ffffff00;
     margin: auto;
