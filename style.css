@@ -315,6 +315,21 @@ html {
     color: var(--black);
         text-decoration: none;
 }
+.post-text {
+    top: 20vh;
+    position: relative;
+    font-size: 3vw;
+    color: var(--black);
+}
+.post-title {
+    text-align: center;
+    font-size: 5vw;
+    color: var(--blue);
+}
+.post-ita {
+    font-style: italic;
+    color: var(--dark);
+}
 
 @media screen and (min-width: 768px) {
     #header-title {
