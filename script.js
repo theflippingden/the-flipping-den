@@ -110,10 +110,16 @@ var postArr = [
     ["shoes", "Shoes - A Lucrative but Tricky Market", 0],
     ["pokemon-cards", "Pokemon Cards - A Cash Printer", 0]
 ];
-function loadFeatured() {
-    
-};
+//I have to make the full array work but i need to make it so featured posts are picked from postArr and dumped into the front page (idk how this will affect seo but idc rn)
 var flagFeatured = false;
+var postSquares = document.getElementsByClassName("postsquare");
+function fillAllPotentialBoxes() {
+    for (var f=0; f<postSquares.length; f++) {
+        if (postSquares[f].style.display !== "none") {
+            postSquares[f].querySelector("p").innerHTML = postSquares[f].querySelector("a").href.split("/")[4];
+        }
+    }
+}
 (function pageCheck() {
     for (var z=0; z<pagesJS.length; z++) {
         pagesJS[z].style.display = "none";
@@ -124,6 +130,7 @@ var flagFeatured = false;
         pagesJS[2].style.display = "inline-block";
         document.title = "Home | The Flipping Den";
         console.log("Loaded home page via blank");
+        fillAllPotentialBoxes();
     } else if (siteTag == "home") {
         pagesJS[0].style.display = "inline-block";
         pagesJS[1].style.display = "inline-block";
@@ -153,7 +160,7 @@ var flagFeatured = false;
     } else {
         flagFeatured = false;
         for (var x=0; x<postArr.length; x++) {
-            if (siteTag == postArr[x][0]) {
+            if (siteTag == "posts/" + postArr[x][0]) {
                 pagesJS[8].children[x].style.display = "inline-block";
                 console.log(pagesJS[8].children[x]);
                 document.title = "Post | " + postArr[x][1];
