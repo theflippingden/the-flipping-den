@@ -121,6 +121,7 @@ function fillAllPotentialBoxes() {
     }
 }
 (function pageCheck() {
+    console.log(siteTag);
     for (var z=0; z<pagesJS.length; z++) {
         pagesJS[z].style.display = "none";
     }
