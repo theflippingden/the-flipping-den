@@ -10,7 +10,7 @@ console.log("INITIAL LOCALSTORAGE DARKMODE IS" + localStorage.getItem("darkmode"
 var nightBtn = document.getElementById("night-button");
 var rootJS = document.documentElement;
 var headerTitle = document.getElementById("header-title");
-var headerz = document.getElementById("big-header");
+var headerz = document.getElementById("header");
 //Functions
 for (var i=0; i<waveJS.length; i++){
     document.getElementsByClassName("waves")[i].style.transform = "scaleX(calc(" + window.innerWidth + "/380))";
