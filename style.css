@@ -28,7 +28,7 @@ html {
     font-family: "Oswald";
     text-align: center;
 }
-#big-header {
+#header {
     position: fixed;
     top: 2vh;
     left: 2.5vw;
@@ -38,25 +38,9 @@ html {
     margin: 0;
     background-color: var(--white);
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: row wrap;
     align-items: space-between;
     justify-content: space-between;
-    z-index: 100;
-    border: 1px solid var(--blue);
-    border-radius: 10px;
-}
-#header {
-    position: relative;
-    top: 2vh;
-    left: 2.5vw;
-    width: 95vw;
-    height: 10vh;
-    padding: 0;
-    margin: 0;
-    background-color: var(--blue);
-    display: flex;
-    align-items: center;
-    justify-content: center;
     z-index: 100;
     border: 1px solid var(--blue);
     border-radius: 10px;
@@ -69,15 +53,6 @@ html {
     margin: auto;
     display: inline-block;
     color: var(--black);
-}
-#extra-content {
-   width: 95vw;
-   height: 50vh;
-   position: relative;
-    padding: 0;
-    margin: 0;
-   background-color: red;
-   
 }
 #funtext {
     display: inline-block;
