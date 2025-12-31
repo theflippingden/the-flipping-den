@@ -115,9 +115,7 @@ var flagFeatured = false;
 var postSquares = document.getElementsByClassName("postsquare");
 function fillAllPotentialBoxes() {
     for (var f=0; f<postSquares.length; f++) {
-        if (postSquares[f].style.display !== "none") {
             postSquares[f].querySelector("p").innerHTML = postSquares[f].querySelector("a").href.split("/")[4];
-        }
     }
 }
 (function pageCheck() {
