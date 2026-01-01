@@ -159,6 +159,7 @@ function fillAllPotentialBoxes() {
     } else {
         flagFeatured = false;
         var editedSiteTag = siteTag.split("/");
+        console.log(editedSiteTag);
         for (var x=0; x<postArr.length; x++) {
             if (editedSiteTag == postArr[x][0]) {
                 pagesJS[8].children[x].style.display = "inline-block";
