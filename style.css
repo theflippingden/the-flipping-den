@@ -92,7 +92,7 @@ html {
 }
 .waves {
     position: absolute;
-    top: 0vh;
+    top: 65vh;
     left: -2.5px;
     z-index: -1;
     opacity: 50%;
@@ -105,7 +105,7 @@ html {
     z-index: 0;
 }
 #wavesvg2{
-    top: 2vh;
+    top: 67vh;
 }
 /*
 #MSB {
