@@ -71,7 +71,7 @@ html {
     flex-flow: column wrap;
     top: 0vh;
     height: 70vh;
-    background-color: red;
+    background-color: var(--blue);
 }
 .pages {
     position: absolute;
