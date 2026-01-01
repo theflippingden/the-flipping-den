@@ -67,9 +67,10 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
+    align-content: center;
     flex-flow: column wrap;
     top: 0vh;
-    height: 65vh;
+    height: 70vh;
     background-color: red;
 }
 .pages {
@@ -92,7 +93,7 @@ html {
 }
 .waves {
     position: absolute;
-    top: 65vh;
+    top: 70vh;
     left: -2.5px;
     z-index: -1;
     opacity: 50%;
@@ -105,7 +106,7 @@ html {
     z-index: 0;
 }
 #wavesvg2{
-    top: 67vh;
+    top: 72vh;
 }
 /*
 #MSB {
