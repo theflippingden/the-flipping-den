@@ -158,10 +158,8 @@ function fillAllPotentialBoxes() {
         console.log("Loaded business page via business");
     } else {
         flagFeatured = false;
-        var editedSiteTag = siteTag.split("/");
-        console.log(editedSiteTag);
         for (var x=0; x<postArr.length; x++) {
-            if (editedSiteTag == postArr[x][0]) {
+            if (siteTag == postArr[x][0]) {
                 pagesJS[8].children[x].style.display = "inline-block";
                 console.log(pagesJS[8].children[x]);
                 document.title = "Post | " + postArr[x][1];
