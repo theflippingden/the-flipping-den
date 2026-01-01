@@ -12,16 +12,12 @@ var rootJS = document.documentElement;
 var headerTitle = document.getElementById("header-title");
 var headerz = document.getElementById("header");
 //Functions
-for (var i=0; i<waveJS.length; i++){
-    document.getElementsByClassName("waves")[i].style.transform = "scaleX(calc(" + window.innerWidth + "/380))";
-}
-
 function resizeWaves() {
     for (var i=0; i<waveJS.length; i++){
         document.getElementsByClassName("waves")[i].style.transform = "scale(calc(" + window.innerWidth + "/380), calc(" + window.innerHeight + "/694))";
     }
 }
-
+resizeWaves();
 function toggleMenu() {
     if (menuOpen == false){
         document.getElementById("opacity-container").style.opacity = "50%";

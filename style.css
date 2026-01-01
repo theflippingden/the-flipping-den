@@ -69,6 +69,7 @@ html {
     justify-content: center;
     flex-flow: column wrap;
     top: 35vh;
+    background-color: red;
 }
 .pages {
     position: absolute;
