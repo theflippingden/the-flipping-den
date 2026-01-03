@@ -91,10 +91,12 @@ html {
 #page0top {
     top: 0;
     left: 0;
-    position: absolute;
+    position: relative;
+    margin: 0;
+    padding: 0;
 }
 #page0 {
-    top: 93vh;
+    margin-top: 10vh;
 }
 .blog-titles {
     text-align: center;
