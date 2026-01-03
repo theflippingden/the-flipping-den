@@ -116,7 +116,7 @@ function fillAllFeaturedBoxes() {
             console.log(featuredPostSquares[f]);
             featuredPostSquares[f].querySelector("p").innerHTML = postArr[featuredPostNums[f]][1];
             featuredPostSquares[f].parentElement.href = "https://theflippingden.com/" + postArr[featuredPostNums[f]][0];
-            featuredPostSquares[f].querySelector("div > p").innerHTML = postArr[featuredPostNums[f]][2];
+            featuredPostSquares[f].querySelector("div > div > p").innerHTML = postArr[featuredPostNums[f]][2];
     }
 }
 function fillAllBoxes() {
