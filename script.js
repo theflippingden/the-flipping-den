@@ -112,7 +112,7 @@ var postSquares = document.getElementsByClassName("postsquare");
 function fillAllPotentialBoxes() {
     for (var f=0; f<postSquares.length; f++) {
             console.log(postSquares[f]);
-            postSquares[f].querySelector("p").innerHTML = postSquares[f].closest("a").href;
+            postSquares[f].querySelector("p").innerHTML = postArr[f][1];
     }
 }
 (function pageCheck() {
