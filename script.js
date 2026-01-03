@@ -111,8 +111,8 @@ var flagFeatured = false;
 var postSquares = document.getElementsByClassName("postsquare");
 function fillAllPotentialBoxes() {
     for (var f=0; f<postSquares.length; f++) {
-            console.log(postSquares[f].parentElement.href);
-            postSquares[f].querySelector("p").innerHTML = postSquares[f].parentElement.href.split("/")[3];
+            console.log(postSquares[f].closest("a").href);
+            postSquares[f].querySelector("p").innerHTML = postSquares[f].closest("a").href;
     }
 }
 (function pageCheck() {
