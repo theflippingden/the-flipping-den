@@ -72,13 +72,16 @@ html {
     transform: skew(-3deg, -3deg);
 }
 #homepagetext {
-    position: absolute;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
     display: flex;
     align-items: center;
     justify-content: center;
     align-content: center;
     flex-flow: column wrap;
-    top: 0vh;
     height: 70.5vh;
     z-index: 10;
     background-color: var(--blue);
