@@ -96,7 +96,7 @@ html {
     padding: 0;
 }
 #page0 {
-    margin-top: 10vh;
+    position: relative;
 }
 .blog-titles {
     text-align: center;
