@@ -106,13 +106,23 @@ var postArr = [
     ["shoes", "Shoes - A Lucrative but Tricky Market", 0],
     ["pokemon-cards", "Pokemon Cards - A Cash Printer", 0]
 ];
+var featuredPostNums = [0,1,2];
 //I have to make the full array work but i need to make it so featured posts are picked from postArr and dumped into the front page (idk how this will affect seo but idc rn)
 var flagFeatured = false;
+var featuredPostSquares = document.getElementsByClassName("featuredpostsquare");
 var postSquares = document.getElementsByClassName("postsquare");
-function fillAllPotentialBoxes() {
-    for (var f=0; f<postSquares.length; f++) {
-            console.log(postSquares[f]);
-            postSquares[f].querySelector("p").innerHTML = postArr[f][1];
+function fillAllFeaturedBoxes() {
+    for (var f=0; f<featuredPostSquares.length; f++) {
+            console.log(featuredPostSquares[f]);
+            featuredPostSquares[f].querySelector("p").innerHTML = postArr[featuredPostNums[f]][1];
+            featuredPostSquares[f].parentElement.href = "https://theflippingden.com/" + postArr[featuredPostNums[f]][0];
+    }
+}
+function fillAllBoxes() {
+    for (var g=0; g<postSquares.length; g++) {
+        console.log(postSquares[g]);
+        postSquares[g].querySelector("p").innerHTML = postArr[g][1];
+        postSquares[f].parentElement.href = "https://theflippingden.com/" + postArr[g][0];
     }
 }
 (function pageCheck() {
@@ -127,14 +137,14 @@ function fillAllPotentialBoxes() {
         pagesJS[2].style.display = "inline-block";
         document.title = "Home | The Flipping Den";
         console.log("Loaded home page via blank");
-        fillAllPotentialBoxes();
+        fillAllFeaturedBoxes();
     } else if (siteTag == "home") {
         pagesJS[0].style.display = "inline-block";
         pagesJS[1].style.display = "inline-block";
         pagesJS[2].style.display = "inline-block";
         document.title = "Home | The Flipping Den";
         console.log("Loaded home page via home");
-        fillAllPotentialBoxes();
+        fillAllFeaturedBoxes();
     } else if (siteTag == "about-us") {
         pagesJS[3].style.display = "inline-block";
         document.title = "About Us | The Flipping Den";

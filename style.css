@@ -234,7 +234,7 @@ html {
     justify-content: space-around;
     flex-flow: row wrap;
 }
-.postsquare {
+.featuredpostsquare, .postsquare {
     width: clamp(300px, 25vw, 400px);
     background-color: var(--blue);
     margin: 20px;
@@ -250,10 +250,10 @@ html {
     box-shadow: 0px 0px 15px 0px var(--dark);
     transition-duration: 0.7s;
 }
-.postsquare:hover {
+.featuredpostsquare:hover, .postsquare:hover {
     box-shadow: 0px 0px 25px 0px var(--dark);
 }
-.postsquareimages {
+.postsquareimages, .featuredpostsquareimages {
     width: 100%;
     border-radius: 10px;
 }
