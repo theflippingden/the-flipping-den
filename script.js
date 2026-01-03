@@ -102,9 +102,9 @@ console.log(pagesJS);
 var siteURL = document.URL;
 var siteTag = siteURL.split("/")[3];
 var postArr = [
-    ["starterguide", "The Starter Guide: Everything that you need to know to start earning profit", 0],
-    ["shoes", "Shoes - A Lucrative but Tricky Market", 0],
-    ["pokemon-cards", "Pokemon Cards - A Cash Printer", 0]
+    ["starterguide", "The Starter Guide: Everything that you need to know to start earning profit", "224"],
+    ["shoes", "Shoes - A Lucrative but Tricky Market", "334"],
+    ["pokemon-cards", "Pokemon Cards - A Cash Printer", "444"]
 ];
 var featuredPostNums = [0,1,2];
 //I have to make the full array work but i need to make it so featured posts are picked from postArr and dumped into the front page (idk how this will affect seo but idc rn)
@@ -116,6 +116,7 @@ function fillAllFeaturedBoxes() {
             console.log(featuredPostSquares[f]);
             featuredPostSquares[f].querySelector("p").innerHTML = postArr[featuredPostNums[f]][1];
             featuredPostSquares[f].parentElement.href = "https://theflippingden.com/" + postArr[featuredPostNums[f]][0];
+            featuredPostSquares[f].querySelector("div > p").innerHTML = postArr[featuredPostNums[f]][2];
     }
 }
 function fillAllBoxes() {
@@ -123,6 +124,7 @@ function fillAllBoxes() {
         console.log(postSquares[g]);
         postSquares[g].querySelector("p").innerHTML = postArr[g][1];
         postSquares[f].parentElement.href = "https://theflippingden.com/" + postArr[g][0];
+        postSquares[f].querySelector("div > p").innerHTML = postArr[g][2];
     }
 }
 (function pageCheck() {
