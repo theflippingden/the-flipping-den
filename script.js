@@ -129,6 +129,7 @@ function fillAllBoxes() {
 }
 (function pageCheck() {
     console.log(siteTag);
+    console.log(pagesJS[8]);
     restateDarkMode();
     for (var z=0; z<pagesJS.length; z++) {
         pagesJS[z].style.display = "none";
@@ -168,16 +169,16 @@ function fillAllBoxes() {
         document.title = "Business | The Flipping Den";
         console.log("Loaded business page via business");
     } else {
-        flagFeatured = false;
+        var flagPost = false;
         for (var x=0; x<postArr.length; x++) {
             if (siteTag == postArr[x][0]) {
                 pagesJS[8].children[x].style.display = "inline-block";
                 console.log(pagesJS[8].children[x]);
                 document.title = "Post | " + postArr[x][1];
-                flagFeatured = true;
+                flagPost = true;
             }
         }
-        if (flagFeatured == false) {
+        if (flagPost == false) {
             document.body.innerHTML = "<h1 style='color: var(--black); text-align: center; line-height: 100vh; position: relative;'>URL not found, redirecting to home in 2 seconds...</h1>";
             const reloadPause = setTimeout(function(){
                 window.location = "https://theflippingden.com/home";
