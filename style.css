@@ -85,7 +85,6 @@ html {
 }
 .pages {
     position: absolute;
-    top: 100vh;
     width: 100vw;
     display: none;
 }
