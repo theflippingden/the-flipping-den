@@ -5,7 +5,7 @@ var menuOpen = false;
 var menuSelects = document.getElementsByClassName("menu-selects");
 var computer = window.matchMedia("(min-width: 768px)");
 var darkMode = false; // replace all instances of darkMode with localstorage darkmode
-//localStorage.setItem("darkmode", false);
+localStorage.setItem("darkmode", false);
 console.log("INITIAL LOCALSTORAGE DARKMODE IS" + localStorage.getItem("darkmode"));
 var nightBtn = document.getElementById("night-button");
 var rootJS = document.documentElement;
@@ -111,12 +111,13 @@ var flagFeatured = false;
 var postSquares = document.getElementsByClassName("postsquare");
 function fillAllPotentialBoxes() {
     for (var f=0; f<postSquares.length; f++) {
-            console.log(postSquares[f].querySelector("a").href.split("/")[3])
+            console.log(postSquares[f].querySelector("a").href.split("/")[3]);
             postSquares[f].querySelector("p").innerHTML = postSquares[f].parentElement.href.split("/")[3];
     }
 }
 (function pageCheck() {
     console.log(siteTag);
+    restateDarkMode();
     for (var z=0; z<pagesJS.length; z++) {
         pagesJS[z].style.display = "none";
     }
@@ -171,6 +172,5 @@ function fillAllPotentialBoxes() {
             }, 2000);
         }
     }
-    restateDarkMode();
 })();
 console.log(window.innerHeight);
