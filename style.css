@@ -100,6 +100,7 @@ html {
 }
 #page0 {
     position: relative;
+    margin-top: 15vh;
 }
 .blog-titles {
     text-align: center;
