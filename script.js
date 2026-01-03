@@ -111,7 +111,7 @@ var flagFeatured = false;
 var postSquares = document.getElementsByClassName("postsquare");
 function fillAllPotentialBoxes() {
     for (var f=0; f<postSquares.length; f++) {
-            console.log(postSquares[f].closest("a").href);
+            console.log(postSquares[f]);
             postSquares[f].querySelector("p").innerHTML = postSquares[f].closest("a").href;
     }
 }
