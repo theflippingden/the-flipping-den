@@ -5,7 +5,7 @@ var menuOpen = false;
 var menuSelects = document.getElementsByClassName("menu-selects");
 var computer = window.matchMedia("(min-width: 768px)");
 var darkMode = false; // replace all instances of darkMode with localstorage darkmode
-localStorage.setItem("darkmode", false);
+localStorage.setItem("darkmode", "false");
 console.log("INITIAL LOCALSTORAGE DARKMODE IS" + localStorage.getItem("darkmode"));
 var nightBtn = document.getElementById("night-button");
 var rootJS = document.documentElement;
@@ -59,7 +59,7 @@ function toggleDarkMode() {
         rootJS.style.setProperty('--black', '#ffffff');
         document.getElementById("header").style.border = "1px solid var(--black)";
         nightBtn.innerHTML = "<i class='material-symbols-outlined'>wb_sunny</i>";
-        localStorage.setItem("darkmode", true);
+        localStorage.setItem("darkmode", "true");
         darkMode = true;
         console.log("Dark Mode Toggled ON via Night button");
     } else if (darkMode == true){
@@ -68,7 +68,7 @@ function toggleDarkMode() {
         rootJS.style.setProperty('--black', '#000000');
         document.getElementById("header").style.border = "1px solid var(--blue)";
         nightBtn.innerHTML = "<i class='material-symbols-outlined'>bedtime</i>";
-        localStorage.setItem("darkmode", false);
+        localStorage.setItem("darkmode", "false");
         darkMode = false;
         console.log("Dark Mode Toggled OFF via Night button");
     }
@@ -111,7 +111,7 @@ var flagFeatured = false;
 var postSquares = document.getElementsByClassName("postsquare");
 function fillAllPotentialBoxes() {
     for (var f=0; f<postSquares.length; f++) {
-            console.log(postSquares[f].querySelector("a").href.split("/")[3]);
+            console.log(postSquares[f].parentElement.href);
             postSquares[f].querySelector("p").innerHTML = postSquares[f].parentElement.href.split("/")[3];
     }
 }
