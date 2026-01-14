@@ -60,6 +60,9 @@ html {
     justify-content: center;
     justify-items: center;
 }
+#footertext {
+    color: white;
+}
 #header-title {
     font-size: 1.2em;
     font-weight: 300;
