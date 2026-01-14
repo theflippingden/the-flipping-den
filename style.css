@@ -356,6 +356,7 @@ html {
     width: 5vh;
     height: 5vh;
     filter: invert(100%);
+    transition-duration: 0.3s;
 }
 .sm-imgs:hover {
     width: 4.8vh;
