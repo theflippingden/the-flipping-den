@@ -347,7 +347,7 @@ html {
     flex-flow: row wrap;
     align-items: center;
     justify-content: center;
-    width: 50vw;
+    width: 100vw;
     height: 12vh;
 }
 .sm-imgs {
