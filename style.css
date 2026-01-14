@@ -49,8 +49,6 @@ html {
     width: 100vw;
     height: 30vh;
     padding: 0;
-    padding-left: 25vw;
-    padding-right: 25vw;
     margin: 0;
     margin-top: 15vh;
     background-color: var(--blue);
