@@ -362,6 +362,9 @@ html {
     width: 4.8vh;
     height: 4.8vh;
 }
+#postscontainer {
+    top: 50vh;
+}
 @media screen and (min-width: 768px) {
     #header-title {
         margin: 0;
