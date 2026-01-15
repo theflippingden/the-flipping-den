@@ -365,7 +365,10 @@ html {
 #postscontainer {
     top: 50vh;
     z-index: 10000;
-
+    div {
+        width: 100vw;
+        background-color: red;
+    }
 }
 @media screen and (min-width: 768px) {
     #header-title {
