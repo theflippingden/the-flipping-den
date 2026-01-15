@@ -365,6 +365,7 @@ html {
 #postscontainer {
     top: 50vh;
     z-index: 10000;
+    background-color: green;
     div {
         width: 100vw;
         background-color: red;
