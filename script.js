@@ -173,8 +173,10 @@ function fillAllBoxes() {
         for (var x=0; x<postArr.length; x++) {
             if (siteTag == postArr[x][0]) {
                 var postsJS = pagesJS[8].children;
+                pagesJS[8].style.display = "inline-block";
                 postsJS[x].style.display = "inline-block";
                 console.log(pagesJS[8].children);
+                c
                 document.title = "Post | " + postArr[x][1];
                 flagPost = true;
             }
