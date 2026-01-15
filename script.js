@@ -176,7 +176,7 @@ function fillAllBoxes() {
                 pagesJS[8].style.display = "inline-block";
                 postsJS[x].style.display = "inline-block";
                 console.log(pagesJS[8].children);
-                c
+                
                 document.title = "Post | " + postArr[x][1];
                 flagPost = true;
             }
