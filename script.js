@@ -100,7 +100,7 @@ window.addEventListener("resize", resizeWaves);
 var pagesJS = document.getElementsByClassName("pages");
 console.log(pagesJS);
 var siteURL = document.URL;
-var siteTag = siteURL.split(/\/(.*)/s)[3];
+var siteTag = siteURL.split(/\/(.*)/s);
 var postArr = [
     ["starterguide", "The Starter Guide: Everything that you need to know to start earning profit", "224"],
     ["shoes", "Shoes - A Lucrative but Tricky Market", "334"],
