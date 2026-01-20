@@ -94,7 +94,7 @@ html {
     background-color: var(--blue);
 }
 .pages {
-    position: absolute;
+    position: relative;
     width: 100vw;
     display: none;
 }
@@ -106,8 +106,7 @@ html {
     padding: 0;
 }
 #page0 {
-    position: relative;
-    margin-top: 15vh;
+    margin-top: 17vh;
 }
 .blog-titles {
     text-align: center;
