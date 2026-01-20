@@ -115,7 +115,7 @@ function fillAllFeaturedBoxes() {
     for (var f=0; f<featuredPostSquares.length; f++) {
             console.log(featuredPostSquares[f]);
             featuredPostSquares[f].querySelector("p").innerHTML = postArr[featuredPostNums[f]][1];
-            featuredPostSquares[f].parentElement.href = "https://theflippingden.com/" + postArr[featuredPostNums[f]][0];
+            featuredPostSquares[f].parentElement.href = "https://theflippingden.com/posts/" + postArr[featuredPostNums[f]][0];
             featuredPostSquares[f].querySelector("div > div > p").innerHTML = postArr[featuredPostNums[f]][2];
     }
 }
