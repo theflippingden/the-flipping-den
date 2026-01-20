@@ -134,7 +134,7 @@ function fillAllBoxes() {
     for (var z=0; z<pagesJS.length; z++) {
         pagesJS[z].style.display = "none";
     }
-    if (siteTag == "/theflippingden.com" || "/theflippingden.com/") {
+    if (siteTag == ("/theflippingden.com" || "/theflippingden.com/")) {
         pagesJS[0].style.display = "inline-block";
         pagesJS[1].style.display = "inline-block";
         pagesJS[2].style.display = "inline-block";
