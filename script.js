@@ -123,7 +123,7 @@ function fillAllBoxes() {
     for (var g=0; g<postSquares.length; g++) {
         console.log(postSquares[g]);
         postSquares[g].querySelector("p").innerHTML = postArr[g][1];
-        postSquares[f].parentElement.href = "https://theflippingden.com/" + postArr[g][0];
+        postSquares[f].parentElement.href = "https://theflippingden.com/posts/" + postArr[g][0];
         postSquares[f].querySelector("div > p").innerHTML = postArr[g][2];
     }
 }
