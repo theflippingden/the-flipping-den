@@ -100,7 +100,7 @@ window.addEventListener("resize", resizeWaves);
 var pagesJS = document.getElementsByClassName("pages");
 console.log(pagesJS);
 var siteURL = document.URL;
-var siteTag = siteURL.split(/\/(.*)/s);
+var siteTag = (siteURL.split(/\/(.*)/s)[1]);
 var postArr = [
     ["starterguide", "The Starter Guide: Everything that you need to know to start earning profit", "224"],
     ["shoes", "Shoes - A Lucrative but Tricky Market", "334"],
@@ -134,44 +134,44 @@ function fillAllBoxes() {
     for (var z=0; z<pagesJS.length; z++) {
         pagesJS[z].style.display = "none";
     }
-    if (siteTag == "") {
+    if (siteTag == "/theflippingden.com") {
         pagesJS[0].style.display = "inline-block";
         pagesJS[1].style.display = "inline-block";
         pagesJS[2].style.display = "inline-block";
         document.title = "Home | The Flipping Den";
         console.log("Loaded home page via blank");
         fillAllFeaturedBoxes();
-    } else if (siteTag == "home") {
+    } else if (siteTag == "/theflippingden.com/home") {
         pagesJS[0].style.display = "inline-block";
         pagesJS[1].style.display = "inline-block";
         pagesJS[2].style.display = "inline-block";
         document.title = "Home | The Flipping Den";
         console.log("Loaded home page via home");
         fillAllFeaturedBoxes();
-    } else if (siteTag == "about-us") {
+    } else if (siteTag == "/theflippingden.com/about-us") {
         pagesJS[3].style.display = "inline-block";
         document.title = "About Us | The Flipping Den";
         console.log("Loaded about page via about");
-    } else if (siteTag == "socials") {
+    } else if (siteTag == "/theflippingden.com/socials") {
         pagesJS[4].style.display = "inline-block";
         document.title = "Socials | The Flipping Den";
         console.log("Loaded socials page via socials");
-    } else if (siteTag == "blogs") {
+    } else if (siteTag == "/theflippingden.com/blogs") {
         pagesJS[5].style.display = "inline-block";
         document.title = "Blogs | The Flipping Den";
         console.log("Loaded blogs page via blogs");
-    } else if (siteTag == "contact-us") {
+    } else if (siteTag == "/theflippingden.com/contact-us") {
         pagesJS[6].style.display = "inline-block";
         document.title = "Contact Us | The Flipping Den";
         console.log("Loaded contact page via contact-us");
-    } else if (siteTag == "business") {
+    } else if (siteTag == "/theflippingden.com/business") {
         pagesJS[7].style.display = "inline-block";
         document.title = "Business | The Flipping Den";
         console.log("Loaded business page via business");
     } else {
         var flagPost = false;
         for (var x=0; x<postArr.length; x++) {
-            if (siteTag == postArr[x][0]) {
+            if (siteTag == "/theflippingden.com/posts/" + postArr[x][0]) {
                 var postsJS = pagesJS[8].children;
                 pagesJS[8].style.display = "inline-block";
                 postsJS[x].style.display = "inline-block";
