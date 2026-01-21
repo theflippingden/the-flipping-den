@@ -217,31 +217,20 @@ html {
 }
 .body-titles, .body-text {
     color: var(--black);
-    padding-left: 5vw;
-    float: left;
-    width: 100vw;
+    
 }
 .body-text-raised {
     color: var(--black);
-    padding-left: 8vw;
     border-left: 2px solid black;
-    width: 92vw;
 }
 .body-titles-centered, .body-text-centered {
-    color: var(--black);
-    padding: 0;
-    margin: 0;
     text-align: center;
 }
 .body-titles-right, .body-text-right {
-    color: var(--black);
-    padding-right: 5vw;
     float: right;
-    width: 100vw;
 }
 .body-text-raised-right {
     color: var(--black);
-    padding-right: 8vw;
     border-right: 2px solid black;
     float: right;
 }
