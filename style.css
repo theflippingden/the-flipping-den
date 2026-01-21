@@ -97,6 +97,7 @@ html {
     position: relative;
     width: 100vw;
     display: none;
+    background-color: yellow;
 }
 #page0top {
     top: 0;
@@ -362,13 +363,20 @@ html {
     height: 4.8vh;
 }
 #postscontainer {
-    top: 50vh;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+    position: relative;
     z-index: 10000;
     background-color: green;
     div {
         width: 100vw;
+        position: relative;
+        padding: 0;
+        margin: 0;
         background-color: red;
         display: none;
+        
     }
     display: none;
 }
