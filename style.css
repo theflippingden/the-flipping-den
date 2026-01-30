@@ -238,6 +238,7 @@ html {
     background-color: blue;
     margin: auto;
     margin-top: 5vh;
+    margin-bottom: 0px;
     display: flex;
     align-items: space-around;
     justify-content: space-around;
