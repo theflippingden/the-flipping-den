@@ -100,7 +100,7 @@ html {
     display: none;
     
 }
-#page1, #page2, #page3, #page4, #page5, #postscontainer {
+#page1, #page2, #page3, #page4, #page5, #postscontainer div {
     margin-top: 20vh;
 }
 #page0top {
