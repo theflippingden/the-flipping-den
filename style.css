@@ -309,17 +309,30 @@ html {
     color: var(--black);
         text-decoration: none;
 }
-.post-text {
+
+.post-title {
     position: relative;
     font-size: 3vw;
     color: var(--black);
-}
-.post-title {
     text-align: center;
     font-size: 5vw;
     color: var(--blue);
 }
+.post-subtitle {
+    position: relative;
+    font-size: 2vw;
+    color: var(--black);
+    text-align: center;
+    
+}
+.post-toc {
+    width: 75vw;
+    
+}
 .post-ita {
+    position: relative;
+    font-size: 3vw;
+    color: var(--black);
     font-style: italic;
     color: var(--dark);
 }
