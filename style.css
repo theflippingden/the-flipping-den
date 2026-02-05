@@ -312,15 +312,14 @@ html {
 
 .post-title {
     position: relative;
-    font-size: 3vw;
-    color: var(--black);
+    font-size: clamp(10px, 3vw, 20px);
     text-align: center;
-    font-size: 5vw;
     color: var(--blue);
+
 }
 .post-subtitle {
     position: relative;
-    font-size: 2vw;
+    font-size: clamp(6.6px, 2vw, 13.3px);
     color: var(--black);
     text-align: center;
     
@@ -332,7 +331,6 @@ html {
 .post-ita {
     position: relative;
     font-size: 3vw;
-    color: var(--black);
     font-style: italic;
     color: var(--dark);
 }
