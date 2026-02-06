@@ -310,6 +310,13 @@ html {
     width: 75vw;
     border-radius: 2px solid var(--dark);
 }
+.toc {
+    list-style-type: none;
+}
+.toc-1 {
+    color: var(--dark);
+    font-size: clamp(10px, 2vw, 20px);
+}
 .post-ita {
     position: relative;
     font-size: 3vw;
