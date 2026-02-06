@@ -304,11 +304,11 @@ html {
     font-size: clamp(6.6px, 2vw, 13.3px);
     color: var(--black);
     text-align: center;
-    
 }
 .post-toc {
     width: 75vw;
     border-radius: 2px solid var(--dark);
+    display: inline-block;
 }
 .toc {
     list-style-type: none;
