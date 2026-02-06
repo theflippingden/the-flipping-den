@@ -294,7 +294,7 @@ html {
 
 .post-title {
     position: relative;
-    font-size: clamp(10px, 3vw, 20px);
+    font-size: clamp(15px, 3vw, 30px);
     text-align: center;
     color: var(--blue);
 
