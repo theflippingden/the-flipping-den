@@ -296,7 +296,7 @@ html {
     position: relative;
     font-size: clamp(15px, 3vw, 30px);
     text-align: center;
-    color: var(--blue);
+    color: var(--dark);
 
 }
 .post-subtitle {
