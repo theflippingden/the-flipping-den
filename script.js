@@ -131,12 +131,6 @@ function fillAllBoxes() {
     console.log(siteTag);
     console.log(pagesJS[8]);
     restateDarkMode();
-    for (var z=0; z<pagesJS.length-1; z++) {
-        pagesJS[z].style.display = "none";
-    }
-    for (var y=0; y<pagesJS[8].children.length; y++) {
-        pagesJS[8].children[y].style.display = "none";
-    }
     if (siteTag == "/theflippingden.com/" || siteTag == "/theflippingden.com") {
         pagesJS[0].style.display = "inline-block";
         pagesJS[1].style.display = "inline-block";

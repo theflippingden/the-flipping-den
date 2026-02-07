@@ -97,8 +97,9 @@ html {
 .pages {
     position: relative;
     width: 100vw;
+}
+.pages:not(#postscontainer) {
     display: none;
-    
 }
 #page1, #page2, #page3, #page4, #page5, #postscontainer div {
     margin-top: 20vh;
@@ -365,9 +366,7 @@ html {
         position: relative;
         padding: 0;
         display: none;
-        
     }
-    display: none;
 }
 @media screen and (min-width: 768px) {
     #header-title {
