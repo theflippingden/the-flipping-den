@@ -309,7 +309,6 @@ html {
 .post-toc {
     width: 75vw;
     border-radius: 2px solid var(--dark);
-    display: inline-block;
 }
 .toc {
     list-style-type: none;
