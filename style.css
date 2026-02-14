@@ -314,7 +314,7 @@ html {
     width: 75vw;
     border-left: 2px solid var(--dark);
     color: var(--black);
-    
+    padding-left: 5vw;
 }
 
 .toc-1 {
@@ -322,6 +322,8 @@ html {
     font-size: clamp(10px, 2vw, 20px);
     list-style-type: disc;
     list-style-position: inside;
+    padding-left: 5vw;
+    margin: 0;
 }
 .toc-1:hover {
     list-style-type: circle;
