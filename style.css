@@ -311,10 +311,11 @@ html {
     text-align: center;
 }
 .toc {
-    width: 75vw;
+    width: 100vw;
     border-left: 2px solid var(--dark);
     color: var(--black);
     padding-left: 5vw;
+    margin: 0;
 }
 
 .toc-1 {
