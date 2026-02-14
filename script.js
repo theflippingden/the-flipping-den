@@ -127,9 +127,9 @@ function fillAllBoxes() {
         postSquares[f].querySelector("div > p").innerHTML = postArr[g][2];
     }
 }
-function scrollPage(amount = 0) {
+(function scrollPage(amount = 50) {
     window.scrollY = amount + "vh;";
-}
+})
 (function pageCheck() {
     console.log(siteTag);
     console.log(pagesJS[8]);
