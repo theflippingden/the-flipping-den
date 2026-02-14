@@ -311,7 +311,7 @@ html {
     border-radius: 2px solid var(--dark);
 }
 .toc {
-    list-style-type: none;
+    
 }
 .toc-1 {
     color: var(--dark);
