@@ -102,7 +102,7 @@ html {
     display: none;
 }
 #postscontainer > div * {
-    display: inherit;
+    display: auto;
 }
 #page1, #page2, #page3, #page4, #page5, #postscontainer div {
     margin-top: 20vh;
