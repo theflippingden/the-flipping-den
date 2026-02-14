@@ -171,7 +171,7 @@ function fillAllBoxes() {
             if (siteTag == "/theflippingden.com/posts/" + postArr[x][0]) {
                 
                 pagesJS[8].children[x].style.display = "inline-block";
-                console.log(documents.getElementsByClassName("toc")[x]);
+                console.log(document.getElementsByClassName("toc")[x]);
                 document.getElementsByClassName("toc")[x].style.display = "inline-block";
 
                 console.log(pagesJS[8].children[x]);
