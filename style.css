@@ -310,17 +310,21 @@ html {
     color: var(--black);
     text-align: center;
 }
-.post-toc {
+.toc {
     width: 75vw;
-    border-radius: 2px solid var(--dark);
-    color: black;
-    background-color: red;
-    height: 50vh;
+    border-left: 2px solid var(--dark);
+    color: var(--black);
+    
 }
 
 .toc-1 {
     color: var(--dark);
     font-size: clamp(10px, 2vw, 20px);
+    list-style-type: disc;
+    list-style-position: inside;
+}
+.toc-1:hover {
+    list-style-type: circle;
 }
 .post-ita {
     position: relative;
