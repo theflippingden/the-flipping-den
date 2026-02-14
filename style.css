@@ -309,10 +309,11 @@ html {
 .post-toc {
     width: 75vw;
     border-radius: 2px solid var(--dark);
+    color: black;
+    background-color: red;
+    height: 50vh;
 }
-.toc {
-    
-}
+
 .toc-1 {
     color: var(--dark);
     font-size: clamp(10px, 2vw, 20px);
