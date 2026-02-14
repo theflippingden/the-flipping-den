@@ -316,6 +316,7 @@ html {
     color: var(--black);
     margin: 0;
     margin-left: 5vw;
+    user-select: none;
 }
 
 .toc-1 {
@@ -325,6 +326,7 @@ html {
     list-style-position: inside;
     padding-left: 5vw;
     margin: 0;
+
 }
 .toc-1:hover {
     list-style-type: circle;
