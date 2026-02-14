@@ -100,7 +100,7 @@ html {
     display: none;
 }
 
-.pages:not(#postscontainer) * {
+#postscontainer div * {
     display: inherit;
 }
 
