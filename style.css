@@ -314,8 +314,8 @@ html {
     width: 100vw;
     border-left: 2px solid var(--dark);
     color: var(--black);
-    padding-left: 5vw;
     margin: 0;
+    margin-left: 5vw;
 }
 
 .toc-1 {
