@@ -312,6 +312,7 @@ html {
     color: black;
     background-color: red;
     height: 50vh;
+    display: inline-block;
 }
 
 .toc-1 {
