@@ -312,6 +312,7 @@ html {
 }
 .toc {
     width: 100vw;
+    height: 500vh;
     border-left: 2px solid var(--dark);
     color: var(--black);
     margin: 0;
