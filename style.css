@@ -311,8 +311,9 @@ html {
     text-align: center;
 }
 .toc {
-    width: 100vw;
-    border-left: 2px solid var(--dark);
+    width: 30vw;
+    border: 2px solid var(--dark);
+    border-radius: 20px;
     color: var(--black);
     margin: 0;
     margin-left: 5vw;
