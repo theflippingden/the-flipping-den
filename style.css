@@ -302,7 +302,6 @@ html {
     font-size: clamp(15px, 3vw, 30px);
     text-align: center;
     color: var(--dark);
-
 }
 .post-subtitle {
     position: relative;
@@ -310,37 +309,17 @@ html {
     color: var(--black);
     text-align: center;
 }
-.toc {
-    width: 30vw;
-    border: 2px solid var(--dark);
-    border-radius: 20px;
-    color: var(--black);
-    margin: 0;
-    padding: 0;
-    position: fixed;
-    right: 5vw;
-    z-index: 1000;
-    padding-top: 5vh;
-    padding-bottom: 5vh;
-    user-select: none;
-}
-.toc-1 {
-    color: var(--dark);
-    font-size: clamp(10px, 2vw, 18px);
-    list-style-type: disc;
-    list-style-position: inside;
-    padding-left: 5vw;
-    margin: 0;
-
-}
-.toc-1:hover {
-    list-style-type: circle;
-}
 .post-ita {
     position: relative;
     font-size: 3vw;
     font-style: italic;
     color: var(--dark);
+}
+.post-text {
+    position: relative;
+    font-size: clamp(5px, 1vw, 10px);
+    color: var(--black);
+    
 }
 .invisible-buttons {
     background-color: none;

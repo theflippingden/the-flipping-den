@@ -102,9 +102,9 @@ console.log(pagesJS);
 var siteURL = document.URL;
 var siteTag = (siteURL.split(/\/(.*)/s)[1]);
 var postArr = [
-    ["starterguide", "The Starter Guide: Everything that you need to know to start earning profit", "224"],
-    ["shoes", "Shoes - A Lucrative but Tricky Market", "334"],
-    ["pokemon-cards", "Pokemon Cards - A Cash Printer", "444"]
+    ["starterguide", "The Starter Guide: Everything that you need to know to start earning profit", "0"],
+    ["shoes", "Shoes - A Lucrative but Tricky Market", "0"],
+    ["pokemon-cards", "Pokemon Cards - A Cash Printer", "0"]
 ];
 var featuredPostNums = [0,1,2];
 //I have to make the full array work but i need to make it so featured posts are picked from postArr and dumped into the front page (idk how this will affect seo but idc rn)
@@ -170,11 +170,8 @@ function fillAllBoxes() {
         var flagPost = false;
         for (var x=0; x<postArr.length; x++) {
             if (siteTag == "/theflippingden.com/posts/" + postArr[x][0]) {
-                
                 pagesJS[8].children[x].style.display = "inline-block";
-                console.log(document.getElementsByClassName("toc")[x]);
-                document.getElementsByClassName("toc")[x].style.display = "inline-block";
-
+                pagesJS[8].children[x].getElementsByClassName("post-title").innerHTML = postArr[g][1];
                 console.log(pagesJS[8].children[x]);
                 document.title = "Post | " + postArr[x][1];
                 flagPost = true;
