@@ -320,7 +320,13 @@ html {
     font-size: clamp(6.6px, 2vw, 15px);
     text-indent: 2em;
     color: var(--black);
-    
+}
+.post-section {
+    background: var(--white);
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
 .invisible-buttons {
     background-color: none;
