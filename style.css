@@ -317,7 +317,8 @@ html {
 }
 .post-text {
     position: relative;
-    font-size: clamp(5px, 1vw, 10px);
+    font-size: clamp(6.6px, 2vw, 15px);
+    text-indent: 2em;
     color: var(--black);
     
 }
