@@ -97,10 +97,11 @@ html {
 .pages {
     position: relative;
     width: 100vw;
-}
-.pages:not(#postscontainer) {
     display: none;
 }
+/*.pages:not(#postscontainer) {
+    display: none;
+}*/
 #postscontainer > div * {
     display: "";
 }
