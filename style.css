@@ -103,7 +103,7 @@ html {
     display: none;
 }*/
 #postscontainer > div * {
-    display: "";
+    display: block;
 }
 
 #page1, #page2, #page3, #page4, #page5, #postscontainer div {
