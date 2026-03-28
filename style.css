@@ -327,6 +327,7 @@ html {
     margin: 0;
     width: 85vw;
     border-radius: 12px;
+    display: block;
 }
 .invisible-buttons {
     background-color: none;
