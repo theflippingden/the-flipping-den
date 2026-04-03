@@ -170,7 +170,7 @@ function showPage(page) {
         for (var y=0; y<postz.length; y++) {
             postz.children[y].style.display = "none";
         }
-        for (var x=0; x<postz.length; x++) {
+        for (var x=0; x<postz.children.length; x++) {
             if (siteTag == "/theflippingden.com/posts/" + postArr[x][0]) {
                 postz.children[x].style.display = "block";
                 console.log(pagesJS[8].children[x]);
