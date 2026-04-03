@@ -99,12 +99,12 @@ html {
     width: 100vw;
     display: none;
 }
+.shown {
+    display: block;
+}
 /*.pages:not(#postscontainer) {
     display: none;
 }*/
-#postscontainer > div * {
-    display: block;
-}
 
 #page1, #page2, #page3, #page4, #page5, #postscontainer div {
     margin-top: 20vh;

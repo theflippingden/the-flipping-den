@@ -127,53 +127,52 @@ function fillAllBoxes() {
         postSquares[f].querySelector("div > p").innerHTML = postArr[g][2];
     }
 }
-
+function showPage(page) {
+    pagesJS[page].classList.add("shown");
+}
 (function pageCheck() {
     console.log(siteTag);
     console.log(pagesJS[8]);
     restateDarkMode();
+    for (var i=0; i<pagesJS.length; i++) {
+        pagesJS[i].classList.remove("active");
+    }
     if (siteTag == "/theflippingden.com/" || siteTag == "/theflippingden.com") {
-        pagesJS[0].style.display = "inline-block";
-        pagesJS[1].style.display = "inline-block";
-        pagesJS[2].style.display = "inline-block";
+        showPage(0);
+        showPage(1);
+        showPage(2);
         document.title = "Home | The Flipping Den";
-        console.log("Loaded home page via blank");
-        fillAllFeaturedBoxes();
-    } else if (siteTag == "/theflippingden.com/home") {
-        pagesJS[0].style.display = "inline-block";
-        pagesJS[1].style.display = "inline-block";
-        pagesJS[2].style.display = "inline-block";
-        document.title = "Home | The Flipping Den";
-        console.log("Loaded home page via home");
         fillAllFeaturedBoxes();
     } else if (siteTag == "/theflippingden.com/about-us") {
-        pagesJS[3].style.display = "inline-block";
+        showPage(3);
         document.title = "About Us | The Flipping Den";
         console.log("Loaded about page via about");
     } else if (siteTag == "/theflippingden.com/socials") {
-        pagesJS[4].style.display = "inline-block";
+        showPage(4);
         document.title = "Socials | The Flipping Den";
         console.log("Loaded socials page via socials");
     } else if (siteTag == "/theflippingden.com/blogs") {
-        pagesJS[5].style.display = "inline-block";
+        showPage(5);
         document.title = "Blogs | The Flipping Den";
         console.log("Loaded blogs page via blogs");
     } else if (siteTag == "/theflippingden.com/contact-us") {
-        pagesJS[6].style.display = "inline-block";
+        showPage(6);
         document.title = "Contact Us | The Flipping Den";
         console.log("Loaded contact page via contact-us");
     } else if (siteTag == "/theflippingden.com/business") {
-        pagesJS[7].style.display = "inline-block";
+        showPage(7);
         document.title = "Business | The Flipping Den";
         console.log("Loaded business page via business");
     } else {
         var flagPost = false;
-        for (var x=0; x<postArr.length; x++) {
+        var postz = pagesJS[8];
+        showPage(8);
+        for (var y=0; y<postz.length; y++) {
+            postz.children[y].style.display = "none";
+        }
+        for (var x=0; x<postz.length; x++) {
             if (siteTag == "/theflippingden.com/posts/" + postArr[x][0]) {
-                pagesJS[8].children[x].style.display = "inline-block";
-                for (var y=0; y< pagesJS[8].children[x].querySelectorAll("*").length; y++) {
-                    pagesJS[8].children[x].querySelectorAll("*")[y].style.display = "block";
-                }
+                postz.children[x].style.display = "block";
                 console.log(pagesJS[8].children[x]);
                 document.title = "Post | " + postArr[x][1];
                 flagPost = true;
