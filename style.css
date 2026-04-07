@@ -322,14 +322,6 @@ html {
     text-indent: 2em;
     color: var(--black);
 }
-.post-section {
-    background: rgb(0,0,0,0);
-    padding: 0;
-    margin: 0;
-    width: 85vw;
-    border-radius: 12px;
-    display: block;
-}
 .invisible-buttons {
     background-color: none;
     color: none;
