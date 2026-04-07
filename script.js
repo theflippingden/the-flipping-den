@@ -137,7 +137,7 @@ function showPage(page) {
     for (var i=0; i<pagesJS.length; i++) {
         pagesJS[i].classList.remove("active");
     }
-    if (siteTag == "/theflippingden.com/" || siteTag == "/theflippingden.com") {
+    if (siteTag == "/theflippingden.com/" || siteTag == "/theflippingden.com" || siteTag == "/theflippingden.com/home") {
         showPage(0);
         showPage(1);
         showPage(2);
@@ -171,6 +171,7 @@ function showPage(page) {
             postz.children[y].style.display = "none";
         }
         for (var x=0; x<postz.children.length; x++) {
+            postz.children[x].style.display = "none";
             if (siteTag == "/theflippingden.com/posts/" + postArr[x][0]) {
                 postz.children[x].style.display = "block";
                 console.log(pagesJS[8].children[x]);
