@@ -167,9 +167,6 @@ function showPage(page) {
         var flagPost = false;
         var postz = pagesJS[8];
         showPage(8);
-        for (var y=0; y<postz.length; y++) {
-            postz.children[y].style.display = "none";
-        }
         for (var x=0; x<postz.children.length; x++) {
             postz.children[x].style.display = "none";
             if (siteTag == "/theflippingden.com/posts/" + postArr[x][0]) {
