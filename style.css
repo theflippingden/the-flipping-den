@@ -375,12 +375,11 @@ html {
 }
 .buyingbox, .holdingbox, .sellingbox {
     position: relative;
-    margin: 0 auto;
     padding: 0;
     background-color: rgb(255,255,255,0);
     border-radius: 10px;
-    width: 70vw;
-    border: 2px solid var(--blue);
+    width: 85vw;
+    border: 2px solid var(--black);
 }
 @media screen and (min-width: 768px) {
     #header-title {
