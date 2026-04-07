@@ -378,7 +378,7 @@ html {
     padding: 0;
     background-color: rgb(255,255,255,0);
     border-radius: 10px;
-    width: 85vw;
+    width: 85%;
     border: 2px solid var(--black);
 }
 @media screen and (min-width: 768px) {
